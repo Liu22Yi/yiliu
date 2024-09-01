@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="rs4flower">
+  <meta property="og:title" content="Predicting reproductive phenology of wind-pollinated trees via PlanetScope time series"/>
+  <meta property="og:description" content="Predicting reproductive phenology of wind-pollinated trees via PlanetScope time series"/>
+  <meta property="og:url" content="https://yiluansong.github.io/rs4flower.html"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/images/rs4flower/7-short.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="global change biology, environmental data science, phenology, allergy , remote sensing">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Predicting reproductive phenology of wind-pollinated trees via PlanetScope time series</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon-otter.png">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Predicting reproductive phenology of wind-pollinated trees via PlanetScope time series</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <strong>Yiluan Song</strong>,</span>
+              <span class="author-block">
+                  Daniel S.W. Katz,
+              </span>
+              <span class="author-block">
+                  Zhe Zhu,
+              </span>
+              <span class="author-block">
+                  Claudie Beaulieu,
+              </span>
+              <span class="author-block">
+                  Kai Zhu
+              </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">Manuscript under review</span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                     <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://www.biorxiv.org/content/10.1101/2024.08.02.606226v1" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+                         <!-- Project website -->
+                      <span class="link-block">
+                        <a href="https://bookdown.org/yiluansong/RS4flower/" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-link"></i>
+                        </span>
+                        <span>Project website</span>
+                      </a>
+                    </span>
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/zhulabgroup/phenology-flower" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Highlights -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Highlights</h2>
+        <div class="content has-text-left">
+          <p>
+            <ul>
+    <li><strong>PlanetScope-derived vegetative phenology predicts the time of flowering.</strong></li>
+    <li><strong>A novel approach accurately infers city-level pollen phenology.
+</strong></li>
+    <li><strong>Out-of-sample accuracy shows the promise of the method for extrapolation.
+    </strong></li>
+    <li><strong>PlanetScope can be used to map pollen phenology widely in US cities with fine details.
+    </strong></li>
+</ul>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End highlights -->
+
+<!-- Paper abstract -->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-left">
+          <p>
+            Airborne pollen triggers allergic reactions which result in public health consequences. A better understanding of flowering and pollen phenology could improve airborne pollen predictions and reduce pollen exposure. Data on the timing of flowering and pollen release are needed to improve models of airborne pollen concentrations, but existing in-situ data collection efforts are expensive and spatially sparse. Satellite-based estimates of plant phenology could potentially enable large-scale data collection, but it is difficult to detect the reproductive phenology of wind-pollinated flowers from space. Here, we infer the reproductive phenology of wind-pollinated plants using PlanetScope time series with a spatial resolution of 3 m and a daily revisit cycle, complemented by in-situ flower and pollen observations, leveraging the correlation between vegetative and reproductive phenology. On the individual tree level, we extracted PlanetScope-derived green-up time and validated its correlation to flowering time using flower observations in a national-scale observatory network. Scaling up to the city level, we developed a novel approach to characterize pollen phenology from PlanetScope-derived vegetative phenology, by optimizing two tuning parameters: the threshold of green-up or green-down and the time lag between green-up/down and flowering. We applied this method to seven cities in the US and seven key wind-pollinated tree genera, calibrated by measurements of airborne pollen concentrations. Our method characterized pollen phenology accurately, not only in-sample (Spearman correlation: 0.751, nRMSE: 13.5%) but also out-of-sample (Spearman correlation: 0.691, nRMSE: 14.5%). Using the calibrated model, we further mapped the pollen phenology landscape within cities, showing intra-urban heterogeneity. Using high spatiotemporal resolution remote sensing, our novel approach enables us to infer the flowering and pollen phenology of wind-pollinated plant taxa on a large scale and a fine resolution, including areas with limited prior in-situ flower and pollen observations. The use of PlanetScope time series therefore holds promise for developing process-based pollen models and targeted public health strategies to mitigate the impact of allergenic pollen exposure.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<!-- Image carousel -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+       <div class="columns is-centered">
+       <div class="column is-four-fifths">
+         <h2 class="title is-3">Extracting phenological signals from PlanetScope</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/rs4flower/1.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-left">
+         A subset of street trees in Detroit overlayed on a true-color PlanetScope image on May
+8, 2017.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/rs4flower/2.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-left">
+         Extraction of tree-level phenological metric from PlanetScope data for wind-pollinated
+trees sampled at the National Ecological Observatory Network (NEON).
+        </h2>
+      </div>
+  </div>
+  </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+
+
+<!-- Image -->
+<section class="hero is-small">
+  <div class="hero-body">
+
+    <div class="container">
+      <div class="columns is-centered">
+       <div class="column is-four-fifths">
+         <h2 class="title is-3">Predicting individual-level flowering phenology</h2>
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/rs4flower/3.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-left">
+        Correlation between 50% green-up time from PlanetScope and flower onset time from
+the National Ecological Observatory Network (NEON).
+        </h2>
+      </div>
+      </div>
+      </div>
+</div>
+</div>
+</section>
+<!-- End image -->
+
+
+<!-- Image carousel -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+       <div class="columns is-centered">
+       <div class="column is-four-fifths">
+         <h2 class="title is-3">Predicting city-level pollen phenology</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/rs4flower/4.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-left">
+         Daily climatology of pollen concentration of seven key pollen-producing genera in studied cities.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/rs4flower/5.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-left">
+         Nonparametric algorithm for inferring pollen phenology from vegetative phenology
+derived from PlanetScope. The model has four main steps: <strong>(a)</strong> Extract tree-level green-up/down date at threshold. <strong>(b)</strong> Upscale to city-level leaf phenology. <strong>(c)</strong> Shift to city-level pollen phenology with leaf-pollen lag. <strong>(d)</strong> Compare with city-level pollen concentration.
+        </h2>
+      </div>
+  </div>
+  <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/rs4flower/6.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-left">
+        Comparing city-level pollen phenology derived from PlanetScope and from airborne pollen concentration monitored at the National Allergy Bureau pollen monitoring stations. <strong>(a)</strong> Pollen phenology inferred from PlanetScope-derived vegetative phenology tuned to the optimal
+green-up/down thresholds and leaf-flower lags (lines) compared to pollen phenology inferred
+from airborne pollen concentration (points). strong>(b)</strong> Accuracy of inferring pollen phenology with the PlanetScope method, both in-sample and out-of-sample.
+        </h2>
+      </div>
+  </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+
+
+<!-- Image -->
+<section class="hero is-small">
+  <div class="hero-body">
+
+    <div class="container">
+      <div class="columns is-centered">
+       <div class="column is-four-fifths">
+         <h2 class="title is-3">Predicting urban allergy landscape</h2>
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/rs4flower/7.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-left">
+        Predicting urban tree allergy landscapes. <strong>(a)</strong> Distributions of PlanetScope-derived tree-level spring leaf green-up time and peak pollen emission time within cities over all years. <strong>(b)</strong> Map of PlanetScope-derived peak pollen emission time in Detroit street trees in the spring of 2018.
+        </h2>
+      </div>
+      </div>
+      </div>
+</div>
+</div>
+</section>
+<!-- End image -->
+
+
+<div class="columns is-centered">
+
+  <span class="link-block">
+  <a href="index.html" target="_self"
+  class="external-link button is-normal is-rounded is-dark">
+  <span class="icon">
+    <i class="fas fa-home"></i>
+  </span>
+  <span>Go Back to Home</span>
+</a>
+</div>
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
