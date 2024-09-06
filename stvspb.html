@@ -4,21 +4,21 @@
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="sft">
-  <meta property="og:title" content="How good is space-for-time substitution"/>
-  <meta property="og:description" content="How good is space-for-time substitution in predicting plant phenology"/>
-  <meta property="og:url" content="https://yiluansong.github.io/sft.html"/>
+  <meta name="description" content="stvspb">
+  <meta property="og:title" content="Statistical vs. process-based models"/>
+  <meta property="og:description" content="Comparing statistical and process-based models for forecasting plant phenology"/>
+  <meta property="og:url" content="https://yiluansong.github.io/stvspb.html"/>
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/images/sft/1.jpg" />
+  <meta property="og:image" content="static/images/stvspb/7.png" />
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
 
   <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="global change biology, environmental data science, phenology, climate change, sensitivity">
+  <meta name="keywords" content="global change biology, environmental data science, phenology, climate change, modeling, forecasting">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>How good is space-for-time substitution</title>
+  <title>Statistical vs. process-based models</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon-otter.png">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -46,14 +46,14 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">How good is space-for-time substitution in predicting plant phenology</h1>
+            <h1 class="title is-1 publication-title">Comparing statistical and process-based models for forecasting plant phenology</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                  Yi Liu,
+                <strong>Yiluan Song</strong>,
               </span>
               <span class="author-block">
-                <strong>Yiluan Song</strong>,
+                  Ziyu Zhou,
               </span>
               <span class="author-block">
                 Kai Zhu
@@ -61,7 +61,7 @@
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    Yi Liu is a 2022 cohort Ph.D. student at the University of Michigan.
+                    Ziyu Zhou was a 2021 cohort undergraduate student at the University of Michigan, now a Master's student at Duke University.
                   </div>
 
                   <div class="is-size-5 publication-authors">
@@ -71,6 +71,16 @@
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/zhulabgroup/phenology-forecast" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
 
             </div>
           </div>
@@ -89,8 +99,9 @@
         <div class="content has-text-left">
           <p>
             <ul>
-    <li><strong>We developed a method to quantify the differences in the sensitivity of plant phenology to temperature over space and over time, taking the uncertainty of both estimates into consideration.</strong></li>
-    <li><strong>We compared spatial and temporal sensitivities in multiple wind-pollinated species to evaluate the use of space-for-time substitution in forecasting their phenology over time.</strong></li>
+    <li><strong>We predicted the time of budburst of red oak across NEON sites with four process-based phenological models and a linear regression model.</strong></li>
+    <li><strong>Process-based models demonstrated higher in-sample and out-of-sample accuracy in short-term predictions.</strong></li>
+    <li><strong>Inferred parameters in process-based models had significant correlation, suggesting parameter identifiability issues.</strong></li>
 </ul>
           </p>
         </div>
@@ -107,12 +118,20 @@
     <div class="container">
       <div class="columns is-centered">
        <div class="column is-four-fifths">
-         <h2 class="title is-3">Comparing sensitivities with uncertainty</h2>
+         <h2 class="title is-3">Data and models</h2>
        <div class="item">
         <!-- Your image here -->
-        <img src="static/images/sft/1.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/stvspb/1.png" alt="MY ALT TEXT" style="height: 400px; width: auto; display: block; margin-left: auto; margin-right: auto;" />
         <h2 class="subtitle has-text-left">
-
+        NEON sites with phenological observations of red maple.
+        </h2>
+      </div>
+      <br>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/stvspb/2.png" alt="MY ALT TEXT" style="height: 400px; width: auto; display: block; margin-left: auto; margin-right: auto;" />
+        <h2 class="subtitle has-text-left">
+        Diagram of the parallel model, one of the four process-based models used in this study (<a href = "https://www.silvafennica.fi/article/7660">Hänninen, 1990</a>).
         </h2>
       </div>
       </div>
@@ -123,27 +142,83 @@
 <!-- End image -->
 
 
-<!-- Image -->
+<!-- Image carousel -->
 <section class="hero is-small is-light">
   <div class="hero-body">
-
     <div class="container">
-      <div class="columns is-centered">
+       <div class="columns is-centered">
        <div class="column is-four-fifths">
-         <h2 class="title is-3">Generalizing to multiple species</h2>
+         <h2 class="title is-3">Predictive skills</h2>
+      <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- Your image here -->
-        <img src="static/images/sft/2.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/stvspb/3.png" alt="MY ALT TEXT" />
         <h2 class="subtitle has-text-left">
-
+         Relationship between observed and predicted first doy for budbreak (in sample).
         </h2>
       </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/stvspb/4.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-left">
+         Relationship between observed and predicted first doy for budbreak (out of  sample).
+        </h2>
       </div>
+  </div>
+  <br>
+  <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/stvspb/5.png" alt="MY ALT TEXT" />
+        <h2 class="subtitle has-text-left">
+         RMSE of predicted first doy for budbreak (in sample).
+        </h2>
       </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/stvspb/6.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-left">
+         RMSE of predicted first doy for budbreak (out of  sample).
+        </h2>
+      </div>
+  </div>
+  </div>
+  </div>
 </div>
 </div>
 </section>
-<!-- End image -->
+<!-- End image carousel -->
+
+<!-- Image carousel -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+       <div class="columns is-centered">
+       <div class="column is-four-fifths">
+         <h2 class="title is-3">Parameter identifiability</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/stvspb/7.png" alt="MY ALT TEXT" />
+        <h2 class="subtitle has-text-left">
+        Correlation matrix of inferred parameters in the linear regression model.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/stvspb/8.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-left">
+         Correlation matrix of inferred parameters in the parallel model, one of the four process-based models used in this study.
+        </h2>
+      </div>
+  </div>
+  <br>
+  </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
 
 <div class="columns is-centered">
 
