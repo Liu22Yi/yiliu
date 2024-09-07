@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="gpedm">
+  <meta property="og:title" content="Gaussian Process Empirical Dynamic Modeling"/>
+  <meta property="og:description" content="Novel data-driven method to model the nonlinear dynamics of leafing phenology"/>
+  <meta property="og:url" content="https://yiluansong.github.io/gpedm.html"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/images/gpedm/2.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="global change biology, environmental data science, phenology, climate change, forecasting, GPEDM, machine learning">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Gaussian Process Empirical Dynamic Modeling</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon-otter.png">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Novel data-driven method to model the nonlinear dynamics of leafing phenology</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <strong>Yiluan Song</strong>,
+              </span>
+              <span class="author-block">
+                Stephan B. Munch,
+              </span>
+              <span class="author-block">
+                Kai Zhu
+              </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">AGU 2020 presentation, ESA 2021 presentation (<a href = "https://www.esa.org/stats/">E.C. Pielow Award</a>)</span>
+                  </div>
+
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Highlights -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Highlights</h2>
+        <div class="content has-text-left">
+          <p>
+            <ul>
+    <li><strong>We used a novel data-driven method of Gaussian Process Empirical Dynamic Modeling (GPEDM) to forecast forest and grassland vegetative phenology.</strong></li>
+    <li><strong>This nonparametric model accounts for nonlinear relationships with environmental variables and past phenology, outperforming traditional parameteric method. </strong></li>
+    <li><strong>The model allowed us to fill in historical data, forecast future data, infer drivers, estimate green-up dates, and simulate impacts of climate change.</strong></li>
+    <li><strong>This approach has the promise to improve predictions of phenology and understanding of complex environmental responses.</strong></li>
+</ul>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End highlights -->
+
+
+<!-- Image -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered">
+       <div class="column is-four-fifths">
+         <h2 class="title is-3">GPEDM</h2>
+       <div class="item has-text-centered">
+        <!-- Your image here -->
+        <img src="static/images/gpedm/1.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-left">
+        Gaussian Process time-delay embedding model with a spatial covaraince function layer (<a href = "https://www.science.org/doi/10.1126/science.1227079">Sugihara et al., 2012</a>).
+        </h2>
+      </div>
+        <br>
+      <div class="item has-text-centered">
+        <!-- Your image here -->
+        <img src="static/images/gpedm/2.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-left">
+        Empirical dynamic modeling through time-delay embedding (<a href = "https://www.sciencedirect.com/science/article/abs/pii/S1476945X16300708">Munch et al., 2017</a>).
+        </h2>
+      </div>
+      </div>
+      </div>
+</div>
+</div>
+</section>
+<!-- End image -->
+
+
+<!-- Image carousel -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+       <div class="columns is-centered">
+       <div class="column is-four-fifths">
+         <h2 class="title is-3">This study</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/gpedm/3.png" alt="MY ALT TEXT" style="height: 500px; width: auto; display: block; margin-left: auto; margin-right: auto;" />
+        <h2 class="subtitle has-text-left">
+         Study area for forest land cover in the NEON domain Appalachians_Cumberland Plateau. Raster mask represent pixels with forest land cover. Orange points represent locations of PhenoCams.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/gpedm/4.png" alt="MY ALT TEXT" style="height: 500px; width: auto; display: block; margin-left: auto; margin-right: auto;" />
+        <h2 class="subtitle has-text-left">
+        Study area for grassland land cover in the NEON domain Pacific Southwest. Raster mask represent pixels with grassland land cover. Orange points represent locations of PhenoCams.
+        </h2>
+      </div>
+  </div>
+  <br>
+  <div class="item has-text-centered">
+        <!-- Your image here -->
+        <img src="static/images/gpedm/5.jpg" alt="MY ALT TEXT" style="height: 800px; width: auto; display: block; margin-left: auto; margin-right: auto;" />
+        <h2 class="subtitle has-text-left">
+        Workflow of this study.
+        </h2>
+      </div>
+  </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+
+
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+       <div class="columns is-centered">
+       <div class="column is-four-fifths">
+         <h2 class="title is-3">One-step ahead predictions</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/gpedm/6.png" alt="MY ALT TEXT" style="height: 600px; width: auto; display: block; margin-left: auto; margin-right: auto;" />
+        <h2 class="subtitle has-text-left">
+        Observed forest EVI in black and predicted forest EVI in purple.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/gpedm/7.png" alt="MY ALT TEXT" style="height: 600px; width: auto; display: block; margin-left: auto; margin-right: auto;" />
+        <h2 class="subtitle has-text-left">
+        Observed grassland EVI in black and predicted forest EVI in purple.
+        </h2>
+      </div>
+  </div>
+  <br>
+  <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/gpedm/8.png" alt="MY ALT TEXT" style="height: 400px; width: auto; display: block; margin-left: auto; margin-right: auto;" />
+        <h2 class="subtitle has-text-left">
+        Accuracy of in-sample predictions and three types of out-of-sample predictions (extrapolation over time, over space, over both time and space)for forest EVI.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/gpedm/9.png" alt="MY ALT TEXT" style="height: 400px; width: auto; display: block; margin-left: auto; margin-right: auto;" />
+        <h2 class="subtitle has-text-left">
+        Accuracy of in-sample predictions and three types of out-of-sample predictions (extrapolation over time, over space, over both time and space)for grassland EVI.
+        </h2>
+      </div>
+  </div>
+  </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+
+
+<!-- Image carousel -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+       <div class="columns is-centered">
+       <div class="column is-four-fifths">
+         <h2 class="title is-3">Multi-steps ahead forecasts</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/gpedm/10.png" alt="MY ALT TEXT" style="height: 600px; width: auto; display: block; margin-left: auto; margin-right: auto;" />
+        <h2 class="subtitle has-text-left">
+        Observed forest EVI in black and forecasted forest EVI in blue starting from black verticle line.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/gpedm/11.png" alt="MY ALT TEXT" style="height: 600px; width: auto; display: block; margin-left: auto; margin-right: auto;" />
+        <h2 class="subtitle has-text-left">
+        Observed forest EVI in black and forecasted grassland EVI in blue starting from black verticle line.
+        </h2>
+      </div>
+  </div>
+  </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+
+
+<!-- Image -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered">
+       <div class="column is-four-fifths">
+         <h2 class="title is-3">Inference</h2>
+       <div class="item has-text-centered">
+        <!-- Your image here -->
+        <img src="static/images/gpedm/12.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-left">
+        Inferred length scale (&phi;) showing the influence of predictors at different lags on response (grassland EVI) at different day of year, with larger values of &phi; suggesting more important influence of a predictor on the response.
+        </h2>
+      </div>
+        <br>
+      <div class="item has-text-centered">
+        <!-- Your image here -->
+        <img src="static/images/gpedm/13.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-left">
+        Inferred functional relationships between the response (forest EVI) and two predictors as examples.
+        </h2>
+      </div>
+      </div>
+      </div>
+</div>
+</div>
+</section>
+<!-- End image -->
+
+
+<!-- Image -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered">
+       <div class="column is-four-fifths">
+         <h2 class="title is-3">Climate change</h2>
+       <div class="item has-text-centered">
+        <!-- Your image here -->
+        <img src="static/images/gpedm/14.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-left">
+        Forecasted forest EVI under 1°C increase in temperature at one pixel in two years as an example.
+        </h2>
+      </div>
+      </div>
+      </div>
+</div>
+</div>
+</section>
+<!-- End image -->
+
+
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+       <div class="columns is-centered">
+       <div class="column is-four-fifths">
+         <h2 class="title is-3">Green-up date</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/gpedm/15.png" alt="MY ALT TEXT" style="height: 500px; width: auto; display: block; margin-left: auto; margin-right: auto;" />
+        <h2 class="subtitle has-text-left">
+        Forest green-up date estimated from observed EVI and EVI from one-stepo ahead predictions, in in-sample tests and three types of out-of-sample tests (extrapolation over time, over space, over both time and space).
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/gpedm/16.png" alt="MY ALT TEXT" style="height: 500px; width: auto; display: block; margin-left: auto; margin-right: auto;" />
+        <h2 class="subtitle has-text-left">
+        Forest green-up dates estimated from observed EVI and EVI from multi-steps ahead forecasts.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/gpedm/17.png" alt="MY ALT TEXT" style="height: 500px; width: auto; display: block; margin-left: auto; margin-right: auto;" />
+        <h2 class="subtitle has-text-left">
+        Forest green-up dates estimated from observed EVI and EVI from multi-steps ahead simulations under 1°C warming.
+        </h2>
+      </div>
+  </div>
+  </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+
+
+<!-- Image carousel -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+       <div class="columns is-centered">
+       <div class="column is-four-fifths">
+         <h2 class="title is-3">PhenoCam greenness</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/gpedm/18.png" alt="MY ALT TEXT" style="height: 500px; width: auto; display: block; margin-left: auto; margin-right: auto;" />
+        <h2 class="subtitle has-text-left">
+        Observed forest PhenoCam greenness in black and forecasted forest PhenoCam greenness in blue starting from black verticle line.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/gpedm/19.png" alt="MY ALT TEXT" style="height: 500px; width: auto; display: block; margin-left: auto; margin-right: auto;" />
+        <h2 class="subtitle has-text-left">
+        Observed grassland PhenoCam greenness in black and forecasted grassland PhenoCam greenness in blue starting from black verticle line.
+        </h2>
+      </div>
+  </div>
+  </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+
+<div class="columns is-centered">
+
+  <span class="link-block">
+  <a href="index.html" target="_self"
+  class="external-link button is-normal is-rounded is-dark"
+  style="position: fixed; bottom: 20px; right: 20px; z-index: 1000;">
+  <span class="icon">
+    <i class="fas fa-home"></i>
+  </span>
+  <span>Home</span>
+</a>
+</div>
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
