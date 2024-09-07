@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="floralvision">
+  <meta property="og:title" content="Monitoring plant-pollinator networks with AI"/>
+  <meta property="og:description" content="Floral Vision: Monitoring plant-pollinator networks by integrating citizen science, computer vision, and museum data"/>
+  <meta property="og:url" content="https://yiluansong.github.io/floralvision.html"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/images/floralvision/2.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="global change biology, environmental data science, species interactions, AI, segmentation, phenological mismatch, citizen science, museum">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Monitoring plant-pollinator networks with AI</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon-otter.png">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Floral Vision: Monitoring plant-pollinator networks by integrating citizen science, computer vision, and museum specimens</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                  James Boyko,
+              </span>
+              <span class="author-block">
+                  Nathan Fox,
+              </span>
+              <span class="author-block">
+                  Yutong Wang,
+              </span>
+              <span class="author-block">
+                <strong>Yiluan Song</strong>,
+              </span>
+              <span class="author-block">
+                  Yu Zhou
+              </span>
+              <span class="author-block">
+                  (random order)
+              </span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/yiluansong/floralvision/
+" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Highlights -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Highlights</h2>
+        <div class="content has-text-left">
+          <p>
+            <ul>
+    <li><strong>We validate and expand plant-pollinator interaction network with citizen science data (iNaturalist images).</strong></li>
+    <li><strong>We process images with interacting plant and pollinators with text-promptable image segmentation and identify species with computer vision models like Pl@ntNet.</strong></li>
+    <li><strong>We compare pheonlogy of interacting species inferred from museum specimen and identify pairs with high risks of phenological mismatch under climate change.</strong></li>
+</ul>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End highlights -->
+
+
+<!-- Image carousel -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+       <div class="columns is-centered">
+       <div class="column is-four-fifths">
+         <h2 class="title is-3">iNaturalist images with plants and pollinators</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/floralvision/1.jpeg" alt="MY ALT TEXT" style="height: 400px; width: auto; display: block; margin-left: auto; margin-right: auto;" />
+        <h2 class="subtitle has-text-left">
+         An Ichneumon wasp (<i>Ichneumon annulatorius</i>) visiting a wild carrot (<i>Daucus carota</i>).
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/floralvision/2.jpeg" alt="MY ALT TEXT" style="height: 400px; width: auto; display: block; margin-left: auto; margin-right: auto;" />
+        <h2 class="subtitle has-text-left">
+         A common Eastern bumble bee <i>Bombus impatiens</i> visiting an unlabeled flowering plant.
+        </h2>
+      </div>
+  </div>
+  <br>
+  <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/floralvision/3.png" alt="MY ALT TEXT" style="height: 500px; width: auto; display: block; margin-left: auto; margin-right: auto;" />
+        <h2 class="subtitle has-text-left">
+         A plant-pollinator network generated based on a set of iNaturalist images with both species labeled using graphistry.
+        </h2>
+      </div>
+  </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+
+
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+       <div class="columns is-centered">
+       <div class="column is-four-fifths">
+         <h2 class="title is-3">What's the insect on?</h2>
+         <div class="columns is-multiline">
+        <div class="column is-half">
+          <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/floralvision/4.png" alt="MY ALT TEXT" style="height: 300px; width: auto; display: block; margin-left: auto; margin-right: auto;"/>
+      </div>
+        </div>
+        <div class="column is-half">
+          <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/floralvision/5.png" alt="MY ALT TEXT" style="height: 300px; width: auto; display: block; margin-left: auto; margin-right: auto;"/>
+      </div>
+        </div>
+        <h2 class="subtitle has-text-left">
+         An iNaturalist image with bee and with bee removed using LangSAM, text-promptable image segmentation.
+        </h2>
+      </div>
+      <br>
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/floralvision/6.png" alt="MY ALT TEXT" style="height: 300px; width: auto; display: block; margin-left: auto; margin-right: auto;"/>
+        <h2 class="subtitle has-text-left">
+        An example of bee removal leading to different plant species identification by Pl@ntNet.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/floralvision/7.png" alt="MY ALT TEXT" style="height: 300px; width: auto; display: block; margin-left: auto; margin-right: auto;"/>
+        <h2 class="subtitle has-text-left">
+        An example of bee removal leading to different plant species identification by Pl@ntNet.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/floralvision/8.png" alt="MY ALT TEXT" style="height: 300px; width: auto; display: block; margin-left: auto; margin-right: auto;"/>
+        <h2 class="subtitle has-text-left">
+        An example of bee removal leading to different plant species identification by Pl@ntNet.
+        </h2>
+      </div>
+  </div>
+  </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+
+
+<!-- Image carousel -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+       <div class="columns is-centered">
+       <div class="column is-four-fifths">
+         <h2 class="title is-3">Phenology of interacting species</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/floralvision/9.png" alt="MY ALT TEXT" style="height: 400px; width: auto; display: block; margin-left: auto; margin-right: auto;"/>
+        <h2 class="subtitle has-text-left">
+         An example of small overlap in the seasonal activity of pollinator species (orange) and the flowering of plant species (green).
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/floralvision/10.png" alt="MY ALT TEXT" style="height: 400px; width: auto; display: block; margin-left: auto; margin-right: auto;"/>
+        <h2 class="subtitle has-text-left">
+         An example of large overlap in the seasonal activity of pollinator species (orange) and the flowering of plant species (green).
+        </h2>
+      </div>
+  </div>
+  </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+
+<div class="columns is-centered">
+
+  <span class="link-block">
+  <a href="index.html" target="_self"
+  class="external-link button is-normal is-rounded is-dark"
+  style="position: fixed; bottom: 20px; right: 20px; z-index: 1000;">
+  <span class="icon">
+    <i class="fas fa-home"></i>
+  </span>
+  <span>Home</span>
+</a>
+</div>
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
