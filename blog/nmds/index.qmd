@@ -51,7 +51,7 @@ PCA is a _parametric_ method for ordination. Today, we are going to add a _nonpa
 
 ```{r, echo = F}
 #| fig.cap = "Example NMDS plot."
-magick::image_read("https://jslefche.files.wordpress.com/2012/10/convex_hulls_color.png") %>% 
+magick::image_read("https://jslefche.files.wordpress.com/2012/10/convex_hulls_color.png") %>%
   magick::image_resize("1200x")
 ```
 
@@ -152,10 +152,12 @@ install.packages("neonUtilities")
 # load neonUtilities
 library(neonUtilities)
 
-dat <- loadByProduct(dpID="DP1.10098.001", 
-                           site=c("BART"),
-                           startdate="2017-01", 
-                           enddate="2021-12")
+dat <- loadByProduct(
+  dpID = "DP1.10098.001",
+  site = c("BART"),
+  startdate = "2017-01",
+  enddate = "2021-12"
+)
 write_rds(dat, "data.rds")
 ```
 
@@ -212,7 +214,7 @@ We need to make this community composition data frame a matrix. Again, each row 
 mat_comm <- df_comm %>%
   select(-plotID, -plotType, -nlcdClass, -lon, -lat) %>%
   as.matrix()
-mat_comm [1:6, 1:6]
+mat_comm[1:6, 1:6]
 ```
 
 With this community composition matrix, we can use the _metaMDS_ function in _vegan_ package to perform NMDS.

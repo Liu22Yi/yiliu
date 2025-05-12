@@ -10,6 +10,7 @@ format:
   html:
     toc: true
     code-overflow: wrap
+    css: styles.css
 ---
 
 ## Introduction
@@ -48,9 +49,7 @@ To host a Shiny app on AWS App Runner, you need to have an AWS account with acce
 
 We need a Dockerfile to build the Docker image of the Shiny app. Here is my example of a Dockerfile.
 
-```{r}
-#| eval: false
-
+```dockerfile
 # Use a base image with R and Shiny Server pre-installed
 FROM rocker/shiny-verse:latest
 
@@ -105,8 +104,7 @@ As we are using GitHub Actions, we need to set up an IAM role that allows GitHub
 5. Navigate to **Access management** and **Roles**. Click on **Create role**. Choose **Web identity** as the trusted entity type. Select `token.actions.githubusercontent.com` as the identity provider. Choose `sts.amazonaws.com` as the audience. Enter GitHub organization, GitHub repository, and GitHub branch that match the app we intend to deploy.
 6. Add the necessary permission policies to the role. For ECR and App Runner, you can use the `AWSAppRunnerFullAccess`, `AWSAppRunnerServicePolicyForECRAccess`, and `AmazonEC2ContainerRegistryFullAccess` policies. Click on **Next**.
 7. Name the role and edit the trust policy. Here is my example.
-```{r}
-#| eval: false
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -147,9 +145,7 @@ Create a `.github/workflows/deploy.yml` file in your repository. Below is my exa
 1. shinyapps-io: Deploys the Shiny app to shinyapps.io.
 2. app-runner: Builds a Docker image and pushes it to AWS ECR.
 
-```{r}
-#| eval: false
-
+```yaml
 name: Build and Deploy Shiny App to AWS
 
 on:
