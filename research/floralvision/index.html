@@ -6,10 +6,16 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="James Boyko">
+<meta name="author" content="Nathan Fox">
+<meta name="author" content="Yutong Wang">
 <meta name="author" content="Yiluan Song">
-<meta name="dcterms.date" content="2025-03-31">
+<meta name="author" content="Yu Zhou">
+<meta name="author" content="(random order)">
+<meta name="dcterms.date" content="2023-11-10">
+<meta name="keywords" content="species interactions, AI, segmentation, phenological mismatch, citizen science, museum, computer vision">
 
-<title>Yiluan Song - Secret removal from GitHub repository</title>
+<title>Yiluan Song - Monitoring plant-pollinator networks with AI</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,40 +27,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -151,10 +123,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
   <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
-  <li><a href="#scan-for-secrets" id="toc-scan-for-secrets" class="nav-link" data-scroll-target="#scan-for-secrets">Scan for secrets</a></li>
-  <li><a href="#remove-secrets" id="toc-remove-secrets" class="nav-link" data-scroll-target="#remove-secrets">Remove secrets</a></li>
-  <li><a href="#wrap-up" id="toc-wrap-up" class="nav-link" data-scroll-target="#wrap-up">Wrap up</a></li>
+  <li><a href="#highlights" id="toc-highlights" class="nav-link active" data-scroll-target="#highlights">Highlights</a></li>
+  <li><a href="#inaturalist-images-with-plants-and-pollinators" id="toc-inaturalist-images-with-plants-and-pollinators" class="nav-link" data-scroll-target="#inaturalist-images-with-plants-and-pollinators">iNaturalist images with plants and pollinators</a></li>
+  <li><a href="#whats-the-insect-on" id="toc-whats-the-insect-on" class="nav-link" data-scroll-target="#whats-the-insect-on">What’s the insect on?</a></li>
+  <li><a href="#phenology-of-interacting-species" id="toc-phenology-of-interacting-species" class="nav-link" data-scroll-target="#phenology-of-interacting-species">Phenology of interacting species</a></li>
   </ul>
 </nav>
     </div>
@@ -164,101 +136,98 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div class="entity-contents">
       <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Secret removal from GitHub repository</h1>
+<h1 class="title">Monitoring plant-pollinator networks with AI</h1>
+<p class="subtitle lead">Floral Vision: Monitoring plant-pollinator networks by integrating citizen science, computer vision, and museum specimens</p>
   <div class="quarto-categories">
-    <div class="quarto-category">Workflow</div>
+    <div class="quarto-category">Changing biodiversity</div>
   </div>
   </div>
 <div class="quarto-title-meta">
     <div>
-    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-heading">Authors</div>
     <div class="quarto-title-meta-contents">
+             <p>James Boyko </p>
+             <p>Nathan Fox </p>
+             <p>Yutong Wang </p>
              <p>Yiluan Song </p>
+             <p>Yu Zhou </p>
+             <p>(random order) </p>
           </div>
   </div>
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">March 31, 2025</p>
+      <p class="date">November 10, 2023</p>
     </div>
   </div>
   </div>
-</header> 
+<div>
+  <div class="keywords">
+    <div class="block-title">Keywords</div>
+    <p>species interactions, AI, segmentation, phenological mismatch, citizen science, museum, computer vision</p>
+  </div>
+</div>
+</header> <div class="about-links">
+  <a href="https://github.com/yiluansong/floralvision/" class="about-link" rel="" target="">
+    <i class="bi bi-github"></i>
+     <span class="about-link-text">Code</span>
+  </a>
+</div>
       <div class="about-contents"><main class="content" id="quarto-document-content">
 
-<section id="introduction" class="level2">
-<h2 data-anchor-id="introduction">Introduction</h2>
-<p>Recently, I received a notification that my GitHub repository contains a secret.</p>
-<p>A secret is a sensitive information that should not be shared publicly, including passwords, API keys, and tokens. We should avoid storing secrets in a GitHub repository to prevent unauthorized access, even when the repository is private. It is not sufficient to simply delete the secret from the repository, as the commit history may still contain the secret. In this blog, I will demonstrate how to remove secrets from a GitHub repository.</p>
+<section id="highlights" class="level2">
+<h2 data-anchor-id="highlights">Highlights</h2>
+<ul>
+<li><strong>We validate and expand plant-pollinator interaction networks with citizen science data (iNaturalist images).</strong></li>
+<li><strong>We process images with interacting plant and pollinators using text-promptable image segmentation and identify species with computer vision models like Pl@ntNet.</strong></li>
+<li><strong>We compare phenology of interacting species inferred from museum specimens and identify pairs with high risks of phenological mismatch under climate change.</strong></li>
+</ul>
+<hr>
 </section>
-<section id="scan-for-secrets" class="level2">
-<h2 data-anchor-id="scan-for-secrets">Scan for secrets</h2>
-<p>I use <a href="https://www.gitguardian.com/">GitGuardian</a> to scan for secrets in my GitHub repositories. GitGuardian can be integrated with GitHub to automatically scan for secrets in repositories.</p>
-<p>You would need to sign up for GitGuardian and authorize access to your GitHub repositories. Once the integration is set up, GitGuardian will scan the repositories you own (could be those in an organization) for secrets.</p>
-<p>In the “Monitored perimeter” section, I can see the repositories that have been scanned, with their health status being “At risk” or “Safe.”</p>
-<p>If you click on a repository, you can see the secrets that have been detected. For each secret, you can see the file path, the type of secret, and the commit that introduced the secret.</p>
-</section>
-<section id="remove-secrets" class="level2">
-<h2 data-anchor-id="remove-secrets">Remove secrets</h2>
-<p>You can still remove the leaked API key from your Git commit history, but simply deleting or modifying the file in a new commit won’t be enough.</p>
-<p>We can use the tool <code>git-filter-repo</code> to remove the secret from the commit history. First, install the tool by running the following command in the terminal.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install git-filter-repo</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="inaturalist-images-with-plants-and-pollinators" class="level2">
+<h2 data-anchor-id="inaturalist-images-with-plants-and-pollinators">iNaturalist images with plants and pollinators</h2>
+<div style="text-align: center;">
+<p><img src="1.jpeg" height="300"> <img src="2.jpeg" height="300"></p>
 </div>
-<p>Alternatively, you can install the tool directly to the folder of your choice.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> <span class="at">-p</span> <span class="op">&lt;</span>path for installation<span class="op">&gt;</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> <span class="op">&lt;</span>path for installation<span class="op">&gt;</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="ex">curl</span> <span class="at">-LO</span> https://raw.githubusercontent.com/newren/git-filter-repo/main/git-filter-repo</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="fu">chmod</span> +x git-filter-repo</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="bu">export</span> <span class="va">PATH</span><span class="op">=&lt;</span>path for installation<span class="op">&gt;</span>:<span class="va">$PATH</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>Check if you have the tool installed correctly.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> filter-repo <span class="at">--version</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>You need to clone the repository as a mirror repository. Note that if you already have this repository cloned in your local environment and have been working on it, you should push your changes and delete this local clone, because we need to work on a fresh clone of the repository.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> <span class="op">&lt;</span>where you usually store your GitHub repositories<span class="op">&gt;</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone <span class="at">--mirror</span> https://github.com/<span class="op">&lt;</span>your username or organization name<span class="op">&gt;</span>/<span class="op">&lt;</span>your repo<span class="op">&gt;</span>.git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>When you use the <code>git clone --mirror</code> command, you might notice that the repo is detached from the remote repository. This is normal.</p>
-<p>We will then go into this repository and use the <code>git filter-repo</code> command to remove the secret. Replace <code>&lt;your-secret-key&gt;</code> with the actual secret you want to remove. You should have obtained the leaked secret from GitGuardian just now. It could be a password, an API key, or a token. If you have multiple secrets to remove, repeat the <code>git filter-repo</code> command for each secret.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> <span class="op">&lt;</span>your repo<span class="op">&gt;</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> filter-repo <span class="at">--replace-text</span> <span class="op">&lt;(</span><span class="bu">echo</span> <span class="st">"&lt;your-secret-key&gt;==&gt;REMOVED"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>Now that we have cleaned the local repository, we will re-add the remote and force push the cleaned repository.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote add origin https://github.com/<span class="op">&lt;</span>your username or organization name<span class="op">&gt;</span>/<span class="op">&lt;</span>your repo<span class="op">&gt;</span>.git</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push <span class="at">--force</span> <span class="at">--all</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<figcaption>
+(Left) An iNaturalist image with bee and with bee removed using LangSAM, text-promptable image segmentation. (Right) A common Eastern bumble bee <i>Bombus impatiens</i> visiting an unlabeled flowering plant [<a href="https://www.inaturalist.org/observations/237010203">Source</a>]
+</figcaption>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="3.png" class="img-fluid figure-img"></p>
+<figcaption>A plant-pollinator network generated based on a set of iNaturalist images with both species labeled using Graphistry.</figcaption>
+</figure>
 </div>
 </section>
-<section id="wrap-up" class="level2">
-<h2 data-anchor-id="wrap-up">Wrap up</h2>
-<p>You are strongly suggested to revoke the leaked secret and generate a new one. Do this in the service where the secret was generated. For example, if it was an API key for Google Cloud, you should revoke the key in the Google Cloud Console and generate a new one.</p>
-<p>Back in your repository, You should update the secret, as well as how it is used. Do not write the secret in your code. You might want to use environment variables or a secret manager to store the secret.</p>
-<p>Here is an example of using environment variables to connect to an account for <code>shinyapps.io</code> in R.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load existing .env file (if it exists)</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>dotenv<span class="sc">::</span><span class="fu">load_dot_env</span>(<span class="st">".env"</span>)</span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Check each required variable and prompt if missing</span></span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>name <span class="ot">&lt;-</span> <span class="fu">check_and_prompt_env</span>(<span class="st">"RSCONNECT_NAME"</span>, <span class="st">"Enter shinyapps.io name: "</span>)</span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>token <span class="ot">&lt;-</span> <span class="fu">check_and_prompt_env</span>(<span class="st">"RSCONNECT_TOKEN"</span>, <span class="st">"Enter shinyapps.io token: "</span>)</span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>secret <span class="ot">&lt;-</span> <span class="fu">check_and_prompt_env</span>(<span class="st">"RSCONNECT_SECRET"</span>, <span class="st">"Enter shinyapps.io secret: "</span>)</span>
-<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Reload .env file to ensure new values are available</span></span>
-<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>dotenv<span class="sc">::</span><span class="fu">load_dot_env</span>(<span class="st">".env"</span>)</span>
-<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Set account info</span></span>
-<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>rsconnect<span class="sc">::</span><span class="fu">setAccountInfo</span>(</span>
-<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>  <span class="at">name =</span> name,</span>
-<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>  <span class="at">token =</span> token,</span>
-<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a>  <span class="at">secret =</span> secret</span>
-<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="whats-the-insect-on" class="level2">
+<h2 data-anchor-id="whats-the-insect-on">What’s the insect on?</h2>
+<div style="text-align: center;">
+<p><img src="4.png" class="img-fluid" style="width:40.0%"> <img src="5.png" class="img-fluid" style="width:40.0%"></p>
 </div>
-<p>Now you can go to GitGuardian and mark the incident(s) as resolved. You can select the repository and click “Scan” to make sure you have removed all secrets successfully.</p>
+<figcaption>
+An iNaturalist image with bee and with bee removed using LangSAM, text-promptable image segmentation.
+</figcaption>
+<div style="text-align: center;">
+<p><img src="6.png" class="img-fluid" style="width:30.0%"> <img src="7.png" class="img-fluid" style="width:30.0%"> <img src="8.png" class="img-fluid" style="width:30.0%"></p>
+</div>
+<figcaption>
+Examples of bee removal leading to different plant species identification by Pl@ntNet.
+</figcaption>
+</section>
+<section id="phenology-of-interacting-species" class="level2">
+<h2 data-anchor-id="phenology-of-interacting-species">Phenology of interacting species</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="9.png" class="img-fluid figure-img"></p>
+<figcaption>Example of small overlap in the seasonal activity of pollinator species (orange) and the flowering of plant species (green).</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="10.png" class="img-fluid figure-img"></p>
+<figcaption>Example of large overlap in the seasonal activity of pollinator species (orange) and the flowering of plant species (green).</figcaption>
+</figure>
+</div>
 
 
 </section>
