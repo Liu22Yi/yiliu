@@ -1,0 +1,56 @@
+---
+title: "Yiluan Song"
+subtitle: "global change biology | environmental data science"
+image: people/headshot/Song.png
+about:
+  template: trestles
+  links:
+    - text: GitHub
+      icon: github
+      url: "https://github.com/yiluansong"
+    - text: Email
+      icon: envelope
+      url: "mailto:songyl@edu"
+    - text: CV
+      icon: file-person
+      url: "https://docs.google.com/document/d/1Hxwe0iR8H5X0eXnYDAnElDwA4bijcMan3mNqRyE2c-o/edit?usp=drive_link"
+comments: false
+header-includes:
+  - |
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+
+        // Find all <a> tags with the class 'about-link-text' inside the header
+        const headerLinks = document.querySelectorAll('.about-link');
+
+        // Loop through each link and set target to "_blank"
+        headerLinks.forEach(function(link) {
+          // Add target="_blank" to the links with class 'about-link'
+          link.setAttribute('target', '_blank');
+          link.setAttribute('rel', 'noopener noreferrer');
+        });
+        
+      });
+    </script>
+---
+
+::: {.column-page}
+
+## Bio
+
+I'm a Schmidt AI in Science Postdoctoral Fellow at the University of Michigan.
+
+My research program operates at the intersection of environmental data science and global change biology. I aim to provide both theoretical insights and practical solutions to the challenges posed by our rapidly changing world.
+
+Over the years, I have committed to advancing our understanding of how climate change impacts phenology and biodiversity, with implications for both natural and social systems. My current work further integrates AI methodologies with ecological research. My research vision centers on three key pillars: harnessing big data, informing decision-making, and advancing ecological theories.
+
+<p></p>
+
+## Research directions
+
+- Changing phenology
+- Changing biodiversity
+- Ecological forecasting
+- Allergen phenology
+
+:::
