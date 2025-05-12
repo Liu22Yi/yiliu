@@ -18,3 +18,9 @@ format:
     theme: flatly
     css: styles.css
     toc: true
+
+publish:
+  gh-pages:
+    branch: gh-pages
+    message: "Auto-generated deployment from Quarto"
+    repository: yiluansong/yiluansong.github.io
