@@ -2,13 +2,13 @@
 title: "NEON phenology forecasting community challenge"
 subtitle: "Predicting spring phenology in deciduous broadleaf forests"
 author:
-  - Yiluan Song
+  - __Yiluan Song__
   - Uttam Bhat
   - Stephan B. Munch
   - Kai Zhu
   - as a team in the forecasting challenge
 date: "2024-02-15"
-description: "Agricultural and Forest Meteorology 2024 (Paper led by Dr. Kathryn I. Wheeler)"
+description: _Agricultural and Forest Meteorology_ 2024 (Paper led by Dr. Kathryn I. Wheeler)
 categories:
   - Ecological forecasting
   - Featured

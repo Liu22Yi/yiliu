@@ -2,7 +2,7 @@
 title: "Gaussian Process Empirical Dynamic Modeling"
 subtitle: "Novel data-driven method to model the nonlinear dynamics of leafing phenology"
 author:
-  - Yiluan Song
+  - __Yiluan Song__
   - Stephan B. Munch
   - Kai Zhu
 date: "2021-08-04"

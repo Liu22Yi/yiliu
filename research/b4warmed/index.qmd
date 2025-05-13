@@ -2,7 +2,7 @@
 title: "Forest tree phenology in a global change experiment"
 subtitle: "Warming makes forest trees grow earlier in the spring, but often not taller"
 author: 
-  - Yiluan Song
+  - __Yiluan Song__
   - Yang Chen
   - Rebecca A. Montgomery
   - Peter B. Reich
@@ -51,7 +51,7 @@ Climate change is causing trees to start growing earlier in the spring, but itâ€
 
 ## B4WarmED Global Change Experiment
 
-![A plot at B4WarmED experiment](1.jpeg)
+![A plot at B4WarmED experiment](1.jpeg){height=500px}
 
 ![Phenology data collected from the experiment in different forms.](2.png)
 

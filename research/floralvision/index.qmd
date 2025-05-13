@@ -5,7 +5,7 @@ author:
   - James Boyko
   - Nathan Fox
   - Yutong Wang
-  - Yiluan Song
+  - __Yiluan Song__
   - Yu Zhou
   - "(random order)"
 date: "2023-11-10"
@@ -43,7 +43,7 @@ format:
 <div style="text-align: center;">
 ![](1.jpeg){height=300px} ![](2.jpeg){height=300px}
 </div>
-<figcaption>(Left) An iNaturalist image with bee and with bee removed using LangSAM, text-promptable image segmentation. (Right) A common Eastern bumble bee <i>Bombus impatiens</i> visiting an unlabeled flowering plant [<a href="https://www.inaturalist.org/observations/237010203">Source</a>]</figcaption>
+<figcaption>(Left) An iNaturalist image with bee and with bee removed using LangSAM, text-promptable image segmentation. [<a href="https://www.inaturalist.org/observations/235608825">Source</a>] (Right) A common Eastern bumble bee <i>Bombus impatiens</i> visiting an unlabeled flowering plant [<a href="https://www.inaturalist.org/observations/237010203">Source</a>]</figcaption>
 
 ![A plant-pollinator network generated based on a set of iNaturalist images with both species labeled using Graphistry.](3.png)
 

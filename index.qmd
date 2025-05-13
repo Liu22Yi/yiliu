@@ -15,23 +15,6 @@ about:
       icon: file-person
       url: "https://docs.google.com/document/d/1Hxwe0iR8H5X0eXnYDAnElDwA4bijcMan3mNqRyE2c-o/edit?usp=drive_link"
 comments: false
-header-includes:
-  - |
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-
-        // Find all <a> tags with the class 'about-link-text' inside the header
-        const headerLinks = document.querySelectorAll('.about-link');
-
-        // Loop through each link and set target to "_blank"
-        headerLinks.forEach(function(link) {
-          // Add target="_blank" to the links with class 'about-link'
-          link.setAttribute('target', '_blank');
-          link.setAttribute('rel', 'noopener noreferrer');
-        });
-        
-      });
-    </script>
 ---
 
 ::: {.column-page}
