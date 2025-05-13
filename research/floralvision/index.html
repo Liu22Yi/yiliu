@@ -74,6 +74,23 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const allLinks = document.querySelectorAll('a[href]');
+
+  allLinks.forEach(function (link) {
+    const isInNavbar = link.closest('nav') !== null;
+    const isInToC = link.closest('.toc') !== null || link.closest('#TOC') !== null;
+
+    const isExternal = link.hostname !== window.location.hostname;
+
+    if (!isInNavbar && !isInToC && isExternal) {
+      link.setAttribute('target', '_blank');
+      link.setAttribute('rel', 'noopener noreferrer');
+    }
+  });
+});
+</script>
 
 
 <link rel="stylesheet" href="styles.css">
@@ -149,7 +166,7 @@ ul.task-list li input[type="checkbox"] {
              <p>James Boyko </p>
              <p>Nathan Fox </p>
              <p>Yutong Wang </p>
-             <p>Yiluan Song </p>
+             <p><strong>Yiluan Song</strong> </p>
              <p>Yu Zhou </p>
              <p>(random order) </p>
           </div>
@@ -190,7 +207,7 @@ ul.task-list li input[type="checkbox"] {
 <p><img src="1.jpeg" height="300"> <img src="2.jpeg" height="300"></p>
 </div>
 <figcaption>
-(Left) An iNaturalist image with bee and with bee removed using LangSAM, text-promptable image segmentation. (Right) A common Eastern bumble bee <i>Bombus impatiens</i> visiting an unlabeled flowering plant [<a href="https://www.inaturalist.org/observations/237010203">Source</a>]
+(Left) An iNaturalist image with bee and with bee removed using LangSAM, text-promptable image segmentation. [<a href="https://www.inaturalist.org/observations/235608825">Source</a>] (Right) A common Eastern bumble bee <i>Bombus impatiens</i> visiting an unlabeled flowering plant [<a href="https://www.inaturalist.org/observations/237010203">Source</a>]
 </figcaption>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">

@@ -154,6 +154,48 @@
     "text": "Deploy site as a GitHub page\nYou can deploy either on GitHub or Netlify. Only GitHub deployment is discussed here.\nBuild site locally.\n\nblogdown::build_site()\n\nBy default, the built webpages are stored in public/, but we want to change the directory name to docs/ for GitHub deployment. To do this, add the line of “publishDir: docs” in config.yaml. Build site again. Don’t forget to delete public/.\nChange baseurl from relative url to absolute url of the GitHub page, otherwise GitHub page does not get the paths right. To do this, change baseurl: in line 1 of config.yaml from “/” to “https://[username].github.io/[repo name]/”.\nTo avoid some bugs in navigation using the “Home” button, I made changes to the themes/hugo-lithium/layouts/partials/nav.html file. I changed the {{ “/” | relURL }} in line 2 to {{ .Site.BaseURL }}.\nTo fix website title display, I made changes to the themes/hugo-lithium/layouts/partials/head.html file in two places. I changed both {{ if eq .RelPermalink “/” }} in {{ if eq .Permalink .Site.BaseURL }}.\nTo make sure all content in docs/ are pushed to GitHub, comment out docs/ in .gitignore if applicable. Push changes to GitHub. Remember to build site again before pushing.\nGo to repo on the GitHub website. Settings &gt; Pages &gt; Build and deployment. Select main branch (or whichever you want), /docs, and save.\nThe website should deploy automatically upon pushing. If deployed successfully, there should be a green tick next to the commit hash. Otherwise, there is a red cross. Click on the red cross or green tick to inspect more details about the deployment.\nThe website url should be “https://[username].github.io/[repo name]/”. You can also find the link in the last step of deployment details."
   },
   {
+    "objectID": "research/grassland/index.html",
+    "href": "research/grassland/index.html",
+    "title": "Rapid shifts in grassland communities driven by climate change",
+    "section": "",
+    "text": "We compiled data on the composition of grassland communities in the California Floristic Province from long-term observations and global change experiments.\nWe characterized community compositional change in the climatic niche space.\nGrassland communities shifted toward species associated with warmer and drier conditions at rates comparable with those of climate change.\nThe shifts were consistent across observational and experimental studies.\nThe rapid responses of grassland communities contrast with the lagged responses of forest communities, indicating unique threats to grassland biodiversity."
+  },
+  {
+    "objectID": "research/grassland/index.html#highlights",
+    "href": "research/grassland/index.html#highlights",
+    "title": "Rapid shifts in grassland communities driven by climate change",
+    "section": "",
+    "text": "We compiled data on the composition of grassland communities in the California Floristic Province from long-term observations and global change experiments.\nWe characterized community compositional change in the climatic niche space.\nGrassland communities shifted toward species associated with warmer and drier conditions at rates comparable with those of climate change.\nThe shifts were consistent across observational and experimental studies.\nThe rapid responses of grassland communities contrast with the lagged responses of forest communities, indicating unique threats to grassland biodiversity."
+  },
+  {
+    "objectID": "research/grassland/index.html#abstract",
+    "href": "research/grassland/index.html#abstract",
+    "title": "Rapid shifts in grassland communities driven by climate change",
+    "section": "Abstract",
+    "text": "Abstract\nMany terrestrial plant communities, especially forests, have been shown to lag in response to rapid climate change. Grassland communities may respond more quickly to novel climates, as they consist mostly of short-lived species, which are directly exposed to macroclimate change. Here we report the rapid response of grassland communities to climate change in the California Floristic Province. We estimated 349 vascular plant species’ climate niches from 829,337 occurrence records, compiled 15 long-term community composition datasets from 12 observational studies and three global change experiments, and analyzed community compositional shifts in the climate niche space. We show that communities experienced significant shifts toward species associated with warmer and drier locations at rates of 0.0216 ± 0.00592 ℃ yr–1(mean ± std. err.) and –3.04 ± 0.742 mm yr–1, and these changes occurred at a pace similar to climate warming and drying. These directional shifts were consistent across observations and experiments. Our findings contrast with the lagged responses observed in communities dominated by long-lived plants and suggest greater biodiversity changes than expected in the near future."
+  },
+  {
+    "objectID": "research/grassland/index.html#estimates-of-species-climatic-niches",
+    "href": "research/grassland/index.html#estimates-of-species-climatic-niches",
+    "title": "Rapid shifts in grassland communities driven by climate change",
+    "section": "Estimates of species’ climatic niches",
+    "text": "Estimates of species’ climatic niches\n\n\n\nGrassland species occur along geographic and climatic gradients to estimate niches."
+  },
+  {
+    "objectID": "research/grassland/index.html#observational-and-experimental-evidence-of-community-shifts",
+    "href": "research/grassland/index.html#observational-and-experimental-evidence-of-community-shifts",
+    "title": "Rapid shifts in grassland communities driven by climate change",
+    "section": "Observational and experimental evidence of community shifts",
+    "text": "Observational and experimental evidence of community shifts\n\n\n\nGrassland community shifts from long-term observations.\n\n\n\n\n\nGrassland community shifts from a long-term experiment."
+  },
+  {
+    "objectID": "research/grassland/index.html#analysis-and-synthesis-of-community-shifts",
+    "href": "research/grassland/index.html#analysis-and-synthesis-of-community-shifts",
+    "title": "Rapid shifts in grassland communities driven by climate change",
+    "section": "Analysis and synthesis of community shifts",
+    "text": "Analysis and synthesis of community shifts\n\n\n\nCChanges in species abundance during grassland community shifts in the observations and experiment.\n\n\n\n\n\nChanges in species abundance during grassland community shifts in the observations and experiment."
+  },
+  {
     "objectID": "research/floralvision/index.html",
     "href": "research/floralvision/index.html",
     "title": "Monitoring plant-pollinator networks with AI",
@@ -172,7 +214,7 @@
     "href": "research/floralvision/index.html#inaturalist-images-with-plants-and-pollinators",
     "title": "Monitoring plant-pollinator networks with AI",
     "section": "iNaturalist images with plants and pollinators",
-    "text": "iNaturalist images with plants and pollinators\n\n \n\n\n(Left) An iNaturalist image with bee and with bee removed using LangSAM, text-promptable image segmentation. (Right) A common Eastern bumble bee Bombus impatiens visiting an unlabeled flowering plant [Source]\n\n\n\n\nA plant-pollinator network generated based on a set of iNaturalist images with both species labeled using Graphistry."
+    "text": "iNaturalist images with plants and pollinators\n\n \n\n\n(Left) An iNaturalist image with bee and with bee removed using LangSAM, text-promptable image segmentation. [Source] (Right) A common Eastern bumble bee Bombus impatiens visiting an unlabeled flowering plant [Source]\n\n\n\n\nA plant-pollinator network generated based on a set of iNaturalist images with both species labeled using Graphistry."
   },
   {
     "objectID": "research/floralvision/index.html#whats-the-insect-on",
@@ -263,7 +305,7 @@
     "href": "research.html",
     "title": "Research",
     "section": "",
-    "text": "Forest tree phenology in a global change experiment\n\n\nWarming makes forest trees grow earlier in the spring, but often not taller\n\n\n\nChanging phenology\n\n\nFirst-author\n\n\n\nManuscript in preparation, invited oral presentation at AGU 2024\n\n\n\n\n\nAug 31, 2024\n\n\nYiluan Song, Yang Chen, Rebecca A. Montgomery, Peter B. Reich, Artur Stefanski, Raimundo Bermudez Villanueva, Kai Zhu\n\n\n\n\n\n\n\n\n\n\n\n\nNEON phenology forecasting community challenge\n\n\nPredicting spring phenology in deciduous broadleaf forests\n\n\n\nEcological forecasting\n\n\nFeatured\n\n\n\nAgricultural and Forest Meteorology 2024 (Paper led by Dr. Kathryn I. Wheeler)\n\n\n\n\n\nFeb 15, 2024\n\n\nYiluan Song, Uttam Bhat, Stephan B. Munch, Kai Zhu, as a team in the forecasting challenge\n\n\n\n\n\n\n\n\n\n\n\n\nMonitoring plant-pollinator networks with AI\n\n\nFloral Vision: Monitoring plant-pollinator networks by integrating citizen science, computer vision, and museum specimens\n\n\n\nChanging biodiversity\n\n\n\n\n\n\n\n\n\nNov 10, 2023\n\n\nJames Boyko, Nathan Fox, Yutong Wang, Yiluan Song, Yu Zhou, (random order)\n\n\n\n\n\n\n\n\n\n\n\n\nGaussian Process Empirical Dynamic Modeling\n\n\nNovel data-driven method to model the nonlinear dynamics of leafing phenology\n\n\n\nEcological forecasting\n\n\nFirst-author\n\n\nAwarded\n\n\n\nAGU 2020 presentation, ESA 2021 presentation (E.C. Pielow Award)\n\n\n\n\n\nAug 4, 2021\n\n\nYiluan Song, Stephan B. Munch, Kai Zhu\n\n\n\n\n\n\nNo matching items"
+    "text": "Rapid shifts in grassland communities driven by climate change\n\n\n\n\n\n\nChanging biodiversity\n\n\nFirst-author\n\n\nFeatured\n\n\n\nNature Ecology & Evolution 2024 (* equal contribution)\n\n\n\n\n\nOct 16, 2024\n\n\nKai Zhu†, Yiluan Song†, Josephine C. Lesage, Justin C. Luong, James W. Bartolome, Nona R. Chiariello, Joan Dudney, Christopher B. Field, Lauren M. Hallett, Michele Hammond, Susan P. Harrison, Grey F. Hayes, Richard J. Hobbs, Karen D. Holl, Peter Hopkinson, Loralee Larios, Michael E. Loik, Laura R. Prugh\n\n\n\n\n\n\n\n\n\n\n\n\nForest tree phenology in a global change experiment\n\n\nWarming makes forest trees grow earlier in the spring, but often not taller\n\n\n\nChanging phenology\n\n\nFirst-author\n\n\n\nManuscript in preparation, invited oral presentation at AGU 2024\n\n\n\n\n\nAug 31, 2024\n\n\nYiluan Song, Yang Chen, Rebecca A. Montgomery, Peter B. Reich, Artur Stefanski, Raimundo Bermudez Villanueva, Kai Zhu\n\n\n\n\n\n\n\n\n\n\n\n\nNEON phenology forecasting community challenge\n\n\nPredicting spring phenology in deciduous broadleaf forests\n\n\n\nEcological forecasting\n\n\nFeatured\n\n\n\nAgricultural and Forest Meteorology 2024 (Paper led by Dr. Kathryn I. Wheeler)\n\n\n\n\n\nFeb 15, 2024\n\n\nYiluan Song, Uttam Bhat, Stephan B. Munch, Kai Zhu, as a team in the forecasting challenge\n\n\n\n\n\n\n\n\n\n\n\n\nMonitoring plant-pollinator networks with AI\n\n\nFloral Vision: Monitoring plant-pollinator networks by integrating citizen science, computer vision, and museum specimens\n\n\n\nChanging biodiversity\n\n\n\n\n\n\n\n\n\nNov 10, 2023\n\n\nJames Boyko, Nathan Fox, Yutong Wang, Yiluan Song, Yu Zhou, (random order)\n\n\n\n\n\n\n\n\n\n\n\n\nGaussian Process Empirical Dynamic Modeling\n\n\nNovel data-driven method to model the nonlinear dynamics of leafing phenology\n\n\n\nEcological forecasting\n\n\nFirst-author\n\n\nAwarded\n\n\n\nAGU 2020 presentation, ESA 2021 presentation (E.C. Pielow Award)\n\n\n\n\n\nAug 4, 2021\n\n\nYiluan Song, Stephan B. Munch, Kai Zhu\n\n\n\n\n\n\n\n\n\n\n\n\nEffects of macrophytes on lake‐water quality across latitudes\n\n\nA meta-analysis\n\n\n\nAquatic systems\n\n\nFirst-author\n\n\nAwarded\n\n\n\nOikos 2018 (Editor’s Choice)\n\n\n\n\n\nDec 4, 2018\n\n\nYiluan Song, Jia Huan Liew, Darren Z. H. Sim, Maxine A. D. Mowe, Simon M. Mitrovic, Hugh T. W. Tan, Darren C. J. Yeo\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
@@ -376,6 +418,55 @@
     "title": "NEON phenology forecasting community challenge",
     "section": "Model evaluation",
     "text": "Model evaluation\n\n\n\nMean predictive skill by model relative to the day of year (DOY) Mean null model.\n\n\n\n“For the 15 %, 50 %, and 85 % greenup transition dates, PEG, GPEDM, and greenbears_gams beat the DOY Mean model furthest out”\n\n\n\n\nForecast horizon, or number of days before the transition dates that each forecast model did better at forecasting greenness (GCC) than day of year mean model across the range of all sites."
+  },
+  {
+    "objectID": "research/macrophyte/index.html",
+    "href": "research/macrophyte/index.html",
+    "title": "Effects of macrophytes on lake‐water quality across latitudes",
+    "section": "",
+    "text": "Macrophytes significantly improve water quality.\n\nEffects are similar or stronger at lower latitudes, challenging the idea that macrophytes are less effective in (sub)tropical regions.\n\nMacrophyte effects on water quality vary by growth form and study design."
+  },
+  {
+    "objectID": "research/macrophyte/index.html#highlights",
+    "href": "research/macrophyte/index.html#highlights",
+    "title": "Effects of macrophytes on lake‐water quality across latitudes",
+    "section": "",
+    "text": "Macrophytes significantly improve water quality.\n\nEffects are similar or stronger at lower latitudes, challenging the idea that macrophytes are less effective in (sub)tropical regions.\n\nMacrophyte effects on water quality vary by growth form and study design."
+  },
+  {
+    "objectID": "research/macrophyte/index.html#abstract",
+    "href": "research/macrophyte/index.html#abstract",
+    "title": "Effects of macrophytes on lake‐water quality across latitudes",
+    "section": "Abstract",
+    "text": "Abstract\nMacrophytes are widely recognized for improving water quality and stabilizing the desirable clear-water state in lakes. The positive effects of macrophytes on water quality have been noted to be weaker in the (sub)tropics compared to those of temperate regions. We conducted a global meta-analysis using 47 studies that met our set criteria to assess the overall effects of macrophytes on water quality (measured by phytoplankton chlorophyll a concentration, total nitrogen concentration, total phosphorus concentration, Secchi depth and the trophic state index) and to investigate how these effects correlate with latitude using meta-regressions. We also examined if the effects of macrophytes on lake-water quality differ with growth form and study design in (sub)tropical and temperate areas by grouping the data and then comparing the effect sizes. We found that macrophytes significantly reduced phytoplankton chlorophyll a concentration, total nitrogen concentration, total phosphorus concentration, as well as the trophic state index, but they did not have a significant overall effect on Secchi depth. The effects of macrophytes on reducing phytoplankton chlorophyll a concentration, total nitrogen concentration and the trophic state index did not differ with latitude. However, the reduction of total phosphorus concentration was greater at lower latitudes. We showed that at lower latitudes, the positive effects of macrophytes on water quality are similar to or greater than those at higher latitudes, thus challenging the prevailing paradigm of macrophytes being less effective at enhancing lake-water quality in the (sub)tropics. Furthermore, our data showed that the macrophyte effects vary by growth forms, and the growth forms that positively affect water quality differ between the (sub)tropical and temperate areas. We showed a lack of significant macrophyte effects in surveys within and outside macrophyte stands, suggesting difference in the sensitivities of study designs or possibly weaker effects of macrophytes in lakes compared to experimental settings."
+  },
+  {
+    "objectID": "research/macrophyte/index.html#a-meta-analysis",
+    "href": "research/macrophyte/index.html#a-meta-analysis",
+    "title": "Effects of macrophytes on lake‐water quality across latitudes",
+    "section": "A meta-analysis",
+    "text": "A meta-analysis\n\n\n\nGlobal distribution of the studies included in the meta-analysis."
+  },
+  {
+    "objectID": "research/macrophyte/index.html#overall-effects",
+    "href": "research/macrophyte/index.html#overall-effects",
+    "title": "Effects of macrophytes on lake‐water quality across latitudes",
+    "section": "Overall effects",
+    "text": "Overall effects\n\n\n\nMean Hedges’ g effect sizes and 95% confidence interval of the analyses of five metrics describing the effects of macrophytes on water quality."
+  },
+  {
+    "objectID": "research/macrophyte/index.html#effect-sizes-along-latitudinal-gradients",
+    "href": "research/macrophyte/index.html#effect-sizes-along-latitudinal-gradients",
+    "title": "Effects of macrophytes on lake‐water quality across latitudes",
+    "section": "Effect sizes along latitudinal gradients",
+    "text": "Effect sizes along latitudinal gradients\n\n\n\nEffects of macrophytes on water quality metrics across latitudinal gradients"
+  },
+  {
+    "objectID": "research/macrophyte/index.html#impacts-of-macrophyte-growth-form-and-study-design",
+    "href": "research/macrophyte/index.html#impacts-of-macrophyte-growth-form-and-study-design",
+    "title": "Effects of macrophytes on lake‐water quality across latitudes",
+    "section": "Impacts of macrophyte growth form and study design",
+    "text": "Impacts of macrophyte growth form and study design\n\n\n\nEffect sizes grouped by climatic zones and then macrophyte growth forms.\n\n\n\n\n\nEffect sizes grouped by climatic zones and then study designs."
   },
   {
     "objectID": "blog/secret-removal/index.html",

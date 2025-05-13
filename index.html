@@ -67,19 +67,21 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
+  const allLinks = document.querySelectorAll('a[href]');
 
-    // Find all <a> tags with the class 'about-link-text' inside the header
-    const headerLinks = document.querySelectorAll('.about-link');
+  allLinks.forEach(function (link) {
+    const isInNavbar = link.closest('nav') !== null;
+    const isInToC = link.closest('.toc') !== null || link.closest('#TOC') !== null;
 
-    // Loop through each link and set target to "_blank"
-    headerLinks.forEach(function(link) {
-      // Add target="_blank" to the links with class 'about-link'
+    const isExternal = link.hostname !== window.location.hostname;
+
+    if (!isInNavbar && !isInToC && isExternal) {
       link.setAttribute('target', '_blank');
       link.setAttribute('rel', 'noopener noreferrer');
-    });
-
+    }
   });
+});
 </script>
 
 

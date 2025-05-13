@@ -76,6 +76,23 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const allLinks = document.querySelectorAll('a[href]');
+
+  allLinks.forEach(function (link) {
+    const isInNavbar = link.closest('nav') !== null;
+    const isInToC = link.closest('.toc') !== null || link.closest('#TOC') !== null;
+
+    const isExternal = link.hostname !== window.location.hostname;
+
+    if (!isInNavbar && !isInToC && isExternal) {
+      link.setAttribute('target', '_blank');
+      link.setAttribute('rel', 'noopener noreferrer');
+    }
+  });
+});
+</script>
 
 
 <link rel="stylesheet" href="styles.css">
@@ -155,7 +172,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Authors</div>
     <div class="quarto-title-meta-contents">
-             <p>Yiluan Song </p>
+             <p><strong>Yiluan Song</strong> </p>
              <p>Yang Chen </p>
              <p>Rebecca A. Montgomery </p>
              <p>Peter B. Reich </p>
@@ -208,7 +225,7 @@ ul.task-list li input[type="checkbox"] {
 <h2 data-anchor-id="b4warmed-global-change-experiment">B4WarmED Global Change Experiment</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="1.jpeg" class="img-fluid figure-img"></p>
+<p><img src="1.jpeg" height="500" class="figure-img"></p>
 <figcaption>A plot at B4WarmED experiment</figcaption>
 </figure>
 </div>
