@@ -14,12 +14,16 @@
   {
     "listing": "/research.html",
     "items": [
+      "/research/sft/index.html",
+      "/research/spore/index.html",
       "/research/grassland/index.html",
       "/research/b4warmed/index.html",
       "/research/mercury/index.html",
+      "/research/twitter/index.html",
       "/research/efi/index.html",
       "/research/floralvision/index.html",
       "/research/mismatch/index.html",
+      "/research/velocity/index.html",
       "/research/gpedm/index.html",
       "/research/montane/index.html",
       "/research/macrophyte/index.html"

@@ -196,39 +196,74 @@
     "text": "Analysis and synthesis of community shifts\n\n\n\nCChanges in species abundance during grassland community shifts in the observations and experiment.\n\n\n\n\n\nChanges in species abundance during grassland community shifts in the observations and experiment."
   },
   {
-    "objectID": "research/floralvision/index.html",
-    "href": "research/floralvision/index.html",
-    "title": "Monitoring plant-pollinator networks with AI",
+    "objectID": "research/efi/index.html",
+    "href": "research/efi/index.html",
+    "title": "NEON phenology forecasting community challenge",
     "section": "",
-    "text": "We validate and expand plant-pollinator interaction networks with citizen science data (iNaturalist images).\nWe process images with interacting plant and pollinators using text-promptable image segmentation and identify species with computer vision models like Pl@ntNet.\nWe compare phenology of interacting species inferred from museum specimens and identify pairs with high risks of phenological mismatch under climate change."
+    "text": "We participated in a community forecast challenge to predict daily plant greenness with our model GPEDM out of 18 models.\nForecasts across teams showed that historical means of greenness on each day of year were difficult to outperform.\nGPEDM had the best performance among similar models that are data-driven, dynamic (includes previous state), and use covariates.\nFor the study sites, several static models or models without covariates had better performances than GPEDM in predicting greenness values.\nGPEDM showed its advantage in accurately predicting the ecologically important greenup transition dates."
   },
   {
-    "objectID": "research/floralvision/index.html#highlights",
-    "href": "research/floralvision/index.html#highlights",
-    "title": "Monitoring plant-pollinator networks with AI",
+    "objectID": "research/efi/index.html#highlights",
+    "href": "research/efi/index.html#highlights",
+    "title": "NEON phenology forecasting community challenge",
     "section": "",
-    "text": "We validate and expand plant-pollinator interaction networks with citizen science data (iNaturalist images).\nWe process images with interacting plant and pollinators using text-promptable image segmentation and identify species with computer vision models like Pl@ntNet.\nWe compare phenology of interacting species inferred from museum specimens and identify pairs with high risks of phenological mismatch under climate change."
+    "text": "We participated in a community forecast challenge to predict daily plant greenness with our model GPEDM out of 18 models.\nForecasts across teams showed that historical means of greenness on each day of year were difficult to outperform.\nGPEDM had the best performance among similar models that are data-driven, dynamic (includes previous state), and use covariates.\nFor the study sites, several static models or models without covariates had better performances than GPEDM in predicting greenness values.\nGPEDM showed its advantage in accurately predicting the ecologically important greenup transition dates."
   },
   {
-    "objectID": "research/floralvision/index.html#inaturalist-images-with-plants-and-pollinators",
-    "href": "research/floralvision/index.html#inaturalist-images-with-plants-and-pollinators",
-    "title": "Monitoring plant-pollinator networks with AI",
-    "section": "iNaturalist images with plants and pollinators",
-    "text": "iNaturalist images with plants and pollinators\n\n \n\n\n(Left) An iNaturalist image with bee and with bee removed using LangSAM, text-promptable image segmentation. [Source] (Right) A common Eastern bumble bee Bombus impatiens visiting an unlabeled flowering plant [Source]\n\n\n\n\nA plant-pollinator network generated based on a set of iNaturalist images with both species labeled using Graphistry."
+    "objectID": "research/efi/index.html#the-forecasting-challenge",
+    "href": "research/efi/index.html#the-forecasting-challenge",
+    "title": "NEON phenology forecasting community challenge",
+    "section": "The forecasting challenge",
+    "text": "The forecasting challenge\n\n\n\nLocations of selected sites and the National Phenology Network’s Historical Annual Spring Indices Anomaly for First Leaf product during the study year of 2021 compared to the 1991–2020 average.\n\n\n\n\n\nThe specific days that each model forecasted and the days that each team submitted forecasts on."
   },
   {
-    "objectID": "research/floralvision/index.html#whats-the-insect-on",
-    "href": "research/floralvision/index.html#whats-the-insect-on",
-    "title": "Monitoring plant-pollinator networks with AI",
-    "section": "What’s the insect on?",
-    "text": "What’s the insect on?\n\n \n\n\nAn iNaturalist image with bee and with bee removed using LangSAM, text-promptable image segmentation.\n\n\n  \n\n\nExamples of bee removal leading to different plant species identification by Pl@ntNet."
+    "objectID": "research/efi/index.html#our-model",
+    "href": "research/efi/index.html#our-model",
+    "title": "NEON phenology forecasting community challenge",
+    "section": "Our model",
+    "text": "Our model\n\n\n\nGaussian Process time-delay embedding model with a spatial covaraince function layer and a temporal covariance function layer Sugihara et al., 2012"
   },
   {
-    "objectID": "research/floralvision/index.html#phenology-of-interacting-species",
-    "href": "research/floralvision/index.html#phenology-of-interacting-species",
-    "title": "Monitoring plant-pollinator networks with AI",
-    "section": "Phenology of interacting species",
-    "text": "Phenology of interacting species\n\n\n\nExample of small overlap in the seasonal activity of pollinator species (orange) and the flowering of plant species (green).\n\n\n\n\n\nExample of large overlap in the seasonal activity of pollinator species (orange) and the flowering of plant species (green)."
+    "objectID": "research/efi/index.html#example-of-forecasts",
+    "href": "research/efi/index.html#example-of-forecasts",
+    "title": "NEON phenology forecasting community challenge",
+    "section": "Example of forecasts",
+    "text": "Example of forecasts\n\n\n\nAn example of forecasted greenness values (GCC) submitted by teams on 11 May 2021 for Harvard Forest, with PhenoCan images on dates of 15% and 85% greenup."
+  },
+  {
+    "objectID": "research/efi/index.html#model-evaluation",
+    "href": "research/efi/index.html#model-evaluation",
+    "title": "NEON phenology forecasting community challenge",
+    "section": "Model evaluation",
+    "text": "Model evaluation\n\n\n\nMean predictive skill by model relative to the day of year (DOY) Mean null model.\n\n\n\n“For the 15 %, 50 %, and 85 % greenup transition dates, PEG, GPEDM, and greenbears_gams beat the DOY Mean model furthest out”\n\n\n\n\nForecast horizon, or number of days before the transition dates that each forecast model did better at forecasting greenness (GCC) than day of year mean model across the range of all sites."
+  },
+  {
+    "objectID": "research/sft/index.html",
+    "href": "research/sft/index.html",
+    "title": "How good is space-for-time substitution",
+    "section": "",
+    "text": "We developed a method to quantify the differences in the sensitivity of plant phenology to temperature over space and over time, taking the uncertainty of both estimates into consideration.\nWe compared spatial and temporal sensitivities in multiple wind-pollinated species to evaluate the use of space-for-time substitution in forecasting their phenology over time."
+  },
+  {
+    "objectID": "research/sft/index.html#highlights",
+    "href": "research/sft/index.html#highlights",
+    "title": "How good is space-for-time substitution",
+    "section": "",
+    "text": "We developed a method to quantify the differences in the sensitivity of plant phenology to temperature over space and over time, taking the uncertainty of both estimates into consideration.\nWe compared spatial and temporal sensitivities in multiple wind-pollinated species to evaluate the use of space-for-time substitution in forecasting their phenology over time."
+  },
+  {
+    "objectID": "research/sft/index.html#comparing-sensitivities-with-uncertainty",
+    "href": "research/sft/index.html#comparing-sensitivities-with-uncertainty",
+    "title": "How good is space-for-time substitution",
+    "section": "Comparing sensitivities with uncertainty",
+    "text": "Comparing sensitivities with uncertainty"
+  },
+  {
+    "objectID": "research/sft/index.html#generalizing-to-multiple-species",
+    "href": "research/sft/index.html#generalizing-to-multiple-species",
+    "title": "How good is space-for-time substitution",
+    "section": "Generalizing to multiple species",
+    "text": "Generalizing to multiple species"
   },
   {
     "objectID": "research/montane/index.html",
@@ -315,41 +350,6 @@
     "text": "Upwelling changing coastal Hg budgets\n\n\n\nSimulated Hg budgets in the coastal CCE domain under two scenarios with and without upwelling."
   },
   {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "Blog",
-    "section": "",
-    "text": "Secret removal from GitHub repository\n\n\n\n\n\n\nWorkflow\n\n\n\n\n\n\n\n\n\nMar 31, 2025\n\n\nYiluan Song\n\n\n\n\n\n\n\n\n\n\n\n\nCI/CD\n\n\n\n\n\n\nWorkflow\n\n\n\n\n\n\n\n\n\nJan 28, 2025\n\n\nYiluan Song\n\n\n\n\n\n\n\n\n\n\n\n\nNon-metric Multidimensional Scaling (NMDS)\n\n\n\n\n\n\nStatistics\n\n\n\n\n\n\n\n\n\nOct 4, 2023\n\n\nYiluan Song\n\n\n\n\n\n\n\n\n\n\n\n\nReproducible workflow\n\n\n\n\n\n\nWorkflow\n\n\n\n\n\n\n\n\n\nSep 13, 2023\n\n\nYiluan Song\n\n\n\n\n\n\n\n\n\n\n\n\nPhenology sample data\n\n\n\n\n\n\nEcology\n\n\nStatistics\n\n\n\n\n\n\n\n\n\nSep 10, 2023\n\n\nYiluan Song\n\n\n\n\n\n\n\n\n\n\n\n\nGitHub\n\n\n\n\n\n\nWorkflow\n\n\n\n\n\n\n\n\n\nSep 10, 2023\n\n\nYiluan Song\n\n\n\n\n\n\n\n\n\n\n\n\nBlogdown\n\n\n\n\n\n\nPresentation\n\n\nWorkflow\n\n\n\n\n\n\n\n\n\nSep 9, 2023\n\n\nYiluan Song\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Yiluan Song",
-    "section": "",
-    "text": "I’m a Schmidt AI in Science Postdoctoral Fellow at the University of Michigan.\nMy research program operates at the intersection of environmental data science and global change biology. I aim to provide both theoretical insights and practical solutions to the challenges posed by our rapidly changing world.\nOver the years, I have committed to advancing our understanding of how climate change impacts phenology and biodiversity, with implications for both natural and social systems. My current work further integrates AI methodologies with ecological research. My research vision centers on three key pillars: harnessing big data, informing decision-making, and advancing ecological theories.\n\n\n\n\n\n\nChanging phenology\nChanging biodiversity\nEcological forecasting\nAllergen phenology"
-  },
-  {
-    "objectID": "index.html#bio",
-    "href": "index.html#bio",
-    "title": "Yiluan Song",
-    "section": "",
-    "text": "I’m a Schmidt AI in Science Postdoctoral Fellow at the University of Michigan.\nMy research program operates at the intersection of environmental data science and global change biology. I aim to provide both theoretical insights and practical solutions to the challenges posed by our rapidly changing world.\nOver the years, I have committed to advancing our understanding of how climate change impacts phenology and biodiversity, with implications for both natural and social systems. My current work further integrates AI methodologies with ecological research. My research vision centers on three key pillars: harnessing big data, informing decision-making, and advancing ecological theories."
-  },
-  {
-    "objectID": "index.html#research-directions",
-    "href": "index.html#research-directions",
-    "title": "Yiluan Song",
-    "section": "",
-    "text": "Changing phenology\nChanging biodiversity\nEcological forecasting\nAllergen phenology"
-  },
-  {
-    "objectID": "research.html",
-    "href": "research.html",
-    "title": "Research",
-    "section": "",
-    "text": "Rapid shifts in grassland communities driven by climate change\n\n\n\n\n\n\nChanging biodiversity\n\n\nFirst-author\n\n\nFeatured\n\n\n\nNature Ecology & Evolution 2024 (* equal contribution)\n\n\n\n\n\nOct 16, 2024\n\n\nKai Zhu†, Yiluan Song†, Josephine C. Lesage, Justin C. Luong, James W. Bartolome, Nona R. Chiariello, Joan Dudney, Christopher B. Field, Lauren M. Hallett, Michele Hammond, Susan P. Harrison, Grey F. Hayes, Richard J. Hobbs, Karen D. Holl, Peter Hopkinson, Loralee Larios, Michael E. Loik, Laura R. Prugh\n\n\n\n\n\n\n\n\n\n\n\n\nForest tree phenology in a global change experiment\n\n\nWarming makes forest trees grow earlier in the spring, but often not taller\n\n\n\nChanging phenology\n\n\nFirst-author\n\n\n\nManuscript in preparation, invited oral presentation at AGU 2024\n\n\n\n\n\nAug 31, 2024\n\n\nYiluan Song, Yang Chen, Rebecca A. Montgomery, Peter B. Reich, Artur Stefanski, Raimundo Bermudez Villanueva, Kai Zhu\n\n\n\n\n\n\n\n\n\n\n\n\nEffects of upwelling on Hg cycling\n\n\nUpwelling enhances mercury particle scavenging in the California Current System\n\n\n\nAquatic systems\n\n\n\nEnvironmental Science & Technology 2024\n\n\n\n\n\nAug 22, 2024\n\n\nXinyun Cui, Hannah M. Adams, Michael R. Stukel, Yiluan Song, Amina T. Schartup, Carl H. Lamborg\n\n\n\n\n\n\n\n\n\n\n\n\nNEON phenology forecasting community challenge\n\n\nPredicting spring phenology in deciduous broadleaf forests\n\n\n\nEcological forecasting\n\n\nFeatured\n\n\n\nAgricultural and Forest Meteorology 2024 (Paper led by Dr. Kathryn I. Wheeler)\n\n\n\n\n\nFeb 15, 2024\n\n\nYiluan Song, Uttam Bhat, Stephan B. Munch, Kai Zhu, as a team in the forecasting challenge\n\n\n\n\n\n\n\n\n\n\n\n\nMonitoring plant-pollinator networks with AI\n\n\nFloral Vision: Monitoring plant-pollinator networks by integrating citizen science, computer vision, and museum specimens\n\n\n\nChanging biodiversity\n\n\n\n\n\n\n\n\n\nNov 10, 2023\n\n\nJames Boyko, Nathan Fox, Yutong Wang, Yiluan Song, Yu Zhou, (random order)\n\n\n\n\n\n\n\n\n\n\n\n\nPrediction-based approach for quantifying phenological mismatch\n\n\nacross landscapes under climate change\n\n\n\nChanging phenology\n\n\nEcological forecasting\n\n\nFirst-author\n\n\nAwarded\n\n\n\nLandscape Ecology 2023 (Honorable Mention for Landscape Ecology’s Best Article Award)\n\n\n\n\n\nJan 27, 2023\n\n\nYiluan Song, Stephan B. Munch, Kai Zhu\n\n\n\n\n\n\n\n\n\n\n\n\nGaussian Process Empirical Dynamic Modeling\n\n\nNovel data-driven method to model the nonlinear dynamics of leafing phenology\n\n\n\nEcological forecasting\n\n\nFirst-author\n\n\nAwarded\n\n\n\nAGU 2020 presentation, ESA 2021 presentation (E.C. Pielow Award)\n\n\n\n\n\nAug 4, 2021\n\n\nYiluan Song, Stephan B. Munch, Kai Zhu\n\n\n\n\n\n\n\n\n\n\n\n\nLatitudinal pattern in how montane communities track warming\n\n\n\n\n\n\nChanging biodiversity\n\n\nFeatured\n\n\n\nEcology Letters 2021\n\n\n\n\n\nMay 17, 2021\n\n\nBenjamin G. Freeman, Yiluan Song, Kenneth J. Feeley, Kai Zhu\n\n\n\n\n\n\n\n\n\n\n\n\nEffects of macrophytes on lake‐water quality across latitudes\n\n\nA meta-analysis\n\n\n\nAquatic systems\n\n\nFirst-author\n\n\nAwarded\n\n\n\nOikos 2018 (Editor’s Choice)\n\n\n\n\n\nDec 4, 2018\n\n\nYiluan Song, Jia Huan Liew, Darren Z. H. Sim, Maxine A. D. Mowe, Simon M. Mitrovic, Hugh T. W. Tan, Darren C. J. Yeo\n\n\n\n\n\n\nNo matching items"
-  },
-  {
     "objectID": "research/gpedm/index.html",
     "href": "research/gpedm/index.html",
     "title": "Gaussian Process Empirical Dynamic Modeling",
@@ -418,6 +418,125 @@
     "title": "Gaussian Process Empirical Dynamic Modeling",
     "section": "PhenoCam Greenness",
     "text": "PhenoCam Greenness"
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Secret removal from GitHub repository\n\n\n\n\n\n\nWorkflow\n\n\n\n\n\n\n\n\n\nMar 31, 2025\n\n\nYiluan Song\n\n\n\n\n\n\n\n\n\n\n\n\nCI/CD\n\n\n\n\n\n\nWorkflow\n\n\n\n\n\n\n\n\n\nJan 28, 2025\n\n\nYiluan Song\n\n\n\n\n\n\n\n\n\n\n\n\nNon-metric Multidimensional Scaling (NMDS)\n\n\n\n\n\n\nStatistics\n\n\n\n\n\n\n\n\n\nOct 4, 2023\n\n\nYiluan Song\n\n\n\n\n\n\n\n\n\n\n\n\nReproducible workflow\n\n\n\n\n\n\nWorkflow\n\n\n\n\n\n\n\n\n\nSep 13, 2023\n\n\nYiluan Song\n\n\n\n\n\n\n\n\n\n\n\n\nPhenology sample data\n\n\n\n\n\n\nEcology\n\n\nStatistics\n\n\n\n\n\n\n\n\n\nSep 10, 2023\n\n\nYiluan Song\n\n\n\n\n\n\n\n\n\n\n\n\nGitHub\n\n\n\n\n\n\nWorkflow\n\n\n\n\n\n\n\n\n\nSep 10, 2023\n\n\nYiluan Song\n\n\n\n\n\n\n\n\n\n\n\n\nBlogdown\n\n\n\n\n\n\nPresentation\n\n\nWorkflow\n\n\n\n\n\n\n\n\n\nSep 9, 2023\n\n\nYiluan Song\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Yiluan Song",
+    "section": "",
+    "text": "I’m a Schmidt AI in Science Postdoctoral Fellow at the University of Michigan.\nMy research program operates at the intersection of environmental data science and global change biology. I aim to provide both theoretical insights and practical solutions to the challenges posed by our rapidly changing world.\nOver the years, I have committed to advancing our understanding of how climate change impacts phenology and biodiversity, with implications for both natural and social systems. My current work further integrates AI methodologies with ecological research. My research vision centers on three key pillars: harnessing big data, informing decision-making, and advancing ecological theories.\n\n\n\n\n\n\nChanging phenology\nChanging biodiversity\nEcological forecasting\nAllergen phenology"
+  },
+  {
+    "objectID": "index.html#bio",
+    "href": "index.html#bio",
+    "title": "Yiluan Song",
+    "section": "",
+    "text": "I’m a Schmidt AI in Science Postdoctoral Fellow at the University of Michigan.\nMy research program operates at the intersection of environmental data science and global change biology. I aim to provide both theoretical insights and practical solutions to the challenges posed by our rapidly changing world.\nOver the years, I have committed to advancing our understanding of how climate change impacts phenology and biodiversity, with implications for both natural and social systems. My current work further integrates AI methodologies with ecological research. My research vision centers on three key pillars: harnessing big data, informing decision-making, and advancing ecological theories."
+  },
+  {
+    "objectID": "index.html#research-directions",
+    "href": "index.html#research-directions",
+    "title": "Yiluan Song",
+    "section": "",
+    "text": "Changing phenology\nChanging biodiversity\nEcological forecasting\nAllergen phenology"
+  },
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
+    "section": "",
+    "text": "How good is space-for-time substitution\n\n\nConsistency in spatial and temporal flowering time sensitivity to temperature of wind-pollinated trees: insights from field observation and herbarium data\n\n\n\nEcological forecasting\n\n\nChanging phenology\n\n\nStudent-led\n\n\n\nManuscript in Preparation  Yi Liu is a 2022 cohort Ph.D. student at the University of Michigan.\n\n\n\n\n\nMar 31, 2025\n\n\nYi Liu, Yiluan Song, Kai Zhu\n\n\n\n\n\n\n\n\n\n\n\n\nChanging fungal spore phenology\n\n\nFungal spore seasons advanced across the US over two decades of climate change\n\n\n\nAllergen phenology\n\n\nStudent-led\n\n\n\nManuscript under review  Ruoyu Wu was a Master’s student at the University of Michigan.\n\n\n\n\n\nOct 24, 2024\n\n\nRuoyu Wu, Yiluan Song, Jennifer Head, Daniel S. W. Katz, Kabir G. Peay, Kerby Shedden, Kai Zhu\n\n\n\n\n\n\n\n\n\n\n\n\nRapid shifts in grassland communities driven by climate change\n\n\n\n\n\n\nChanging biodiversity\n\n\nFirst-author\n\n\nFeatured\n\n\n\nNature Ecology & Evolution 2024\n\n\n\n\n\nOct 16, 2024\n\n\nKai Zhu†, Yiluan Song†, Josephine C. Lesage, Justin C. Luong, James W. Bartolome, Nona R. Chiariello, Joan Dudney, Christopher B. Field, Lauren M. Hallett, Michele Hammond, Susan P. Harrison, Grey F. Hayes, Richard J. Hobbs, Karen D. Holl, Peter Hopkinson, Loralee Larios, Michael E. Loik, Laura R. Prugh, († equal contribution)\n\n\n\n\n\n\n\n\n\n\n\n\nForest tree phenology in a global change experiment\n\n\nWarming makes forest trees grow earlier in the spring, but often not taller\n\n\n\nChanging phenology\n\n\nFirst-author\n\n\n\nManuscript in preparation, invited oral presentation at AGU 2024\n\n\n\n\n\nAug 31, 2024\n\n\nYiluan Song, Yang Chen, Rebecca A. Montgomery, Peter B. Reich, Artur Stefanski, Raimundo Bermudez Villanueva, Kai Zhu\n\n\n\n\n\n\n\n\n\n\n\n\nEffects of upwelling on Hg cycling\n\n\nUpwelling enhances mercury particle scavenging in the California Current System\n\n\n\nAquatic systems\n\n\n\nEnvironmental Science & Technology 2024\n\n\n\n\n\nAug 22, 2024\n\n\nXinyun Cui, Hannah M. Adams, Michael R. Stukel, Yiluan Song, Amina T. Schartup, Carl H. Lamborg\n\n\n\n\n\n\n\n\n\n\n\n\nPublic perceptions of pollen seasons under climate change\n\n\nBiological changes, political ideology, and scientific communication shape human perceptions of pollen seasons\n\n\n\nAllergen phenology\n\n\nFirst-author\n\n\n\nManuscript under review  Master’s student Chuangbo Tong, undergraduate student Luke Hamilton, and undergraduate student Cait Schilt at the University of California, Santa Cruz contributed to the exploratory data analysis of this project.\n\n\n\n\n\nAug 2, 2024\n\n\nYiluan Song, Adam Millard-Ball, Nathan Fox, Derek Van Berkel, Arun Agrawal, Kai Zhu\n\n\n\n\n\n\n\n\n\n\n\n\nNEON phenology forecasting community challenge\n\n\nPredicting spring phenology in deciduous broadleaf forests\n\n\n\nEcological forecasting\n\n\nFeatured\n\n\n\nAgricultural and Forest Meteorology 2024 (Paper led by Dr. Kathryn I. Wheeler)\n\n\n\n\n\nFeb 15, 2024\n\n\nYiluan Song, Uttam Bhat, Stephan B. Munch, Kai Zhu, as a team in the forecasting challenge\n\n\n\n\n\n\n\n\n\n\n\n\nMonitoring plant-pollinator networks with AI\n\n\nFloral Vision: Monitoring plant-pollinator networks by integrating citizen science, computer vision, and museum specimens\n\n\n\nChanging biodiversity\n\n\n\n\n\n\n\n\n\nNov 10, 2023\n\n\nJames Boyko, Nathan Fox, Yutong Wang, Yiluan Song, Yu Zhou, (random order)\n\n\n\n\n\n\n\n\n\n\n\n\nPrediction-based approach for quantifying phenological mismatch\n\n\nacross landscapes under climate change\n\n\n\nChanging phenology\n\n\nEcological forecasting\n\n\nFirst-author\n\n\nAwarded\n\n\n\nLandscape Ecology 2023 (Honorable Mention for Landscape Ecology’s Best Article Award in 2023)\n\n\n\n\n\nJan 27, 2023\n\n\nYiluan Song, Stephan B. Munch, Kai Zhu\n\n\n\n\n\n\n\n\n\n\n\n\nClimate-phenology mismatch in human-dominated landscapes\n\n\n\n\n\n\nChanging phenology\n\n\nFirst-author\n\n\nAwarded\n\n\n\nAGU Advances 2021 (Editor’s Highlight)  Christopher J. Zajic was an undergraduate student at the University of California, Santa Cruz.\n\n\n\n\n\nDec 6, 2021\n\n\nYiluan Song, Christopher J. Zajic, Taehee Hwang, Christopher R. Hakkenberg, Kai Zhu\n\n\n\n\n\n\n\n\n\n\n\n\nGaussian Process Empirical Dynamic Modeling\n\n\nNovel data-driven method to model the nonlinear dynamics of leafing phenology\n\n\n\nEcological forecasting\n\n\nFirst-author\n\n\nAwarded\n\n\n\nAGU 2020 presentation, ESA 2021 presentation (E.C. Pielow Award)\n\n\n\n\n\nAug 4, 2021\n\n\nYiluan Song, Stephan B. Munch, Kai Zhu\n\n\n\n\n\n\n\n\n\n\n\n\nLatitudinal pattern in how montane communities track warming\n\n\n\n\n\n\nChanging biodiversity\n\n\nFeatured\n\n\n\nEcology Letters 2021\n\n\n\n\n\nMay 17, 2021\n\n\nBenjamin G. Freeman, Yiluan Song, Kenneth J. Feeley, Kai Zhu\n\n\n\n\n\n\n\n\n\n\n\n\nEffects of macrophytes on lake‐water quality across latitudes\n\n\nA meta-analysis\n\n\n\nAquatic systems\n\n\nFirst-author\n\n\nAwarded\n\n\n\nOikos 2018 (Editor’s Choice)\n\n\n\n\n\nDec 4, 2018\n\n\nYiluan Song, Jia Huan Liew, Darren Z. H. Sim, Maxine A. D. Mowe, Simon M. Mitrovic, Hugh T. W. Tan, Darren C. J. Yeo\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "research/twitter/index.html",
+    "href": "research/twitter/index.html",
+    "title": "Public perceptions of pollen seasons under climate change",
+    "section": "",
+    "text": "Pollen-related Twitter posts correspond to pollen seasons over time and space.\nTwitter users’ attribution of changes in pollen seasons depend on their ideology.\nMore liberal users are more likely to agree with climate impacts on pollen seasons.\nMedia and experts play key roles in communicating climate impacts on pollen seasons."
+  },
+  {
+    "objectID": "research/twitter/index.html#highlights",
+    "href": "research/twitter/index.html#highlights",
+    "title": "Public perceptions of pollen seasons under climate change",
+    "section": "",
+    "text": "Pollen-related Twitter posts correspond to pollen seasons over time and space.\nTwitter users’ attribution of changes in pollen seasons depend on their ideology.\nMore liberal users are more likely to agree with climate impacts on pollen seasons.\nMedia and experts play key roles in communicating climate impacts on pollen seasons."
+  },
+  {
+    "objectID": "research/twitter/index.html#abstract",
+    "href": "research/twitter/index.html#abstract",
+    "title": "Public perceptions of pollen seasons under climate change",
+    "section": "Abstract",
+    "text": "Abstract\nClimate change is generally changing the timing and intensity of pollen seasons, thereby often increasing human exposure to allergenic pollen. Climate-driven changes in pollen seasons present a unique opportunity to craft messaging aimed at communicating climate change impacts on public health through changes in the biological systems. However, it is unclear how pollen seasons are experienced and understood by the public, including how well we detect pollen seasons or what factors we view as responsible for changes in pollen seasons. Here, we use social media data in the United States from 2012 to 2022 to assess public perceptions of pollen seasons at large spatiotemporal scales. We show that pollen seasons detected by social media (Twitter) users align well with natural pollen seasons. Attribution of changing pollen seasons, however, varies based on political ideology: liberal users, compared to conservative users, are more likely to attribute changing pollen seasons to climate change. Mass media and scientific experts play a key role in communicating how climate change drives changing pollen seasons. Our findings reveal how changes in biological systems, political ideology, and scientific communications collectively shape public perceptions of pollen seasons under climate change. Our findings constitute a step towards more effective climate change impact communication and public health intervention design."
+  },
+  {
+    "objectID": "research/twitter/index.html#twitter-users-accurately-detect-pollen-phenology",
+    "href": "research/twitter/index.html#twitter-users-accurately-detect-pollen-phenology",
+    "title": "Public perceptions of pollen seasons under climate change",
+    "section": "Twitter users accurately detect pollen phenology",
+    "text": "Twitter users accurately detect pollen phenology\n\n\n\nTwitter pollen phenology aligns with natural pollen phenology over time and space. (a) Twitter pollen phenology aligns with natural pollen phenology over time and space. (b) Both Twitter and natural pollen phenology exhibit latitudinal gradients. (c) Spatial variation of pollen phenology across states in the US."
+  },
+  {
+    "objectID": "research/twitter/index.html#attribution-to-climate-change-depends-on-political-ideology",
+    "href": "research/twitter/index.html#attribution-to-climate-change-depends-on-political-ideology",
+    "title": "Public perceptions of pollen seasons under climate change",
+    "section": "Attribution to climate change depends on political ideology",
+    "text": "Attribution to climate change depends on political ideology\n\n\n\nTwitter users’ attribution of pollen phenology was likely ideologically structured. (a) Venn diagram showing the relationship between three groups of continental US Twitter users defined for this study. (b) Density and kernel density estimates of ideology score in three groups of users. (c & d) Correlation between the conditional probability of a user attributing changes in pollen phenology to a specific driver (temperature change or climate change) given general interest in pollen phenology and the bin of ideology the user was in."
+  },
+  {
+    "objectID": "research/twitter/index.html#scientific-communication-dominates-discussions-on-climate-change-impacts",
+    "href": "research/twitter/index.html#scientific-communication-dominates-discussions-on-climate-change-impacts",
+    "title": "Public perceptions of pollen seasons under climate change",
+    "section": "Scientific communication dominates discussions on climate change impacts",
+    "text": "Scientific communication dominates discussions on climate change impacts\n\n\n\nRole of scientific communication on Twitter users’ discussions on pollen phenology. The series of Sankey diagrams show the flow of messages from the source (users being retweeted) to the destination (users posting retweets) in our compiled dataset."
+  },
+  {
+    "objectID": "research/spore/index.html",
+    "href": "research/spore/index.html",
+    "title": "Changing fungal spore phenology",
+    "section": "",
+    "text": "The onset of both ecological and allergenic fungal spore seasons has advanced across the US from 2003 to 2022.\nConcurrently, the overall intensity of fungal spore seasons has seen a decline.\nEarlier onset of ecological spore seasons was correlated with higher temperature and lower precipitation.\nLower spore season intensity was correlated with lower precipitation."
+  },
+  {
+    "objectID": "research/spore/index.html#highlights",
+    "href": "research/spore/index.html#highlights",
+    "title": "Changing fungal spore phenology",
+    "section": "",
+    "text": "The onset of both ecological and allergenic fungal spore seasons has advanced across the US from 2003 to 2022.\nConcurrently, the overall intensity of fungal spore seasons has seen a decline.\nEarlier onset of ecological spore seasons was correlated with higher temperature and lower precipitation.\nLower spore season intensity was correlated with lower precipitation."
+  },
+  {
+    "objectID": "research/spore/index.html#abstract",
+    "href": "research/spore/index.html#abstract",
+    "title": "Changing fungal spore phenology",
+    "section": "Abstract",
+    "text": "Abstract\nPhenological shifts due to climate change have been extensively studied in plants and animals, yet the responses of fungal spores—crucial organisms that play important roles in ecosystems and act as airborne allergens—remain understudied. This knowledge gap in global change biology hinders our understanding of its ecological and public health implications. To bridge this gap, we first acquired a long-term (2003 — 2022), and large-scale (the continental US) dataset of airborne fungal spores collected by the US National Allergy Bureau. We then extracted ten metrics describing the phenology (e.g., start and end of season) and intensity (e.g., peak concentration and integral) of fungal spore seasons using both ecological and public health approaches, defined as percentiles of total spore concentration and allergenic thresholds of spore concentration, respectively. Using linear mixed effects models, we quantified annual temporal shifts in these metrics across the continental US. We revealed that the onset of the spore season has significantly advanced from both ecological (11 days, 95% confidence interval: 0.4 — 23 days) and public health (22 days, 6 — 38 days) perspectives over two decades. Nevertheless, the total spore concentration in an annual cycle and in a spore allergy season tended to decrease over time. The earlier start of the spore season was significantly correlated with climatic variables, such as warmer temperatures and altered precipitations. Overall, our findings suggest possible climate-driven advanced fungal spore seasons, highlighting the importance of climate change mitigation and adaptation in public health decision-making."
+  },
+  {
+    "objectID": "research/spore/index.html#characterizing-fungal-spore-seasons",
+    "href": "research/spore/index.html#characterizing-fungal-spore-seasons",
+    "title": "Changing fungal spore phenology",
+    "section": "Characterizing fungal spore seasons",
+    "text": "Characterizing fungal spore seasons\n\n\n\nFungal spore calendar for ten sampling stations.\n\n\n\n\n\nDefinition and numerical summary of ten fungal spore metrics."
+  },
+  {
+    "objectID": "research/spore/index.html#shifts-in-fungal-spore-seasons",
+    "href": "research/spore/index.html#shifts-in-fungal-spore-seasons",
+    "title": "Changing fungal spore phenology",
+    "section": "Shifts in fungal spore seasons",
+    "text": "Shifts in fungal spore seasons\n\n\n\nStation-level temporal trends of the start of allergy season.\n\n\n\n\n\nTemporal trends of ten fungal spore metrics across all the stations."
+  },
+  {
+    "objectID": "research/spore/index.html#relationship-with-climatic-factors",
+    "href": "research/spore/index.html#relationship-with-climatic-factors",
+    "title": "Changing fungal spore phenology",
+    "section": "Relationship with climatic factors",
+    "text": "Relationship with climatic factors\n\n\n\nRegression coefficients of spore season metrics against climatic variables."
   },
   {
     "objectID": "research/mismatch/index.html",
@@ -511,46 +630,81 @@
     "text": "Climate change impacts on shoot growth\n\n\n\nFitting a hierarchical Bayesian model based on a logistic functional shape to model shoot growth in spring.\n\n\n\n\n\nEffect sizes of warming, drying, and closed canopy on shoot growth in spring for red oak."
   },
   {
-    "objectID": "research/efi/index.html",
-    "href": "research/efi/index.html",
-    "title": "NEON phenology forecasting community challenge",
+    "objectID": "research/floralvision/index.html",
+    "href": "research/floralvision/index.html",
+    "title": "Monitoring plant-pollinator networks with AI",
     "section": "",
-    "text": "We participated in a community forecast challenge to predict daily plant greenness with our model GPEDM out of 18 models.\nForecasts across teams showed that historical means of greenness on each day of year were difficult to outperform.\nGPEDM had the best performance among similar models that are data-driven, dynamic (includes previous state), and use covariates.\nFor the study sites, several static models or models without covariates had better performances than GPEDM in predicting greenness values.\nGPEDM showed its advantage in accurately predicting the ecologically important greenup transition dates."
+    "text": "We validate and expand plant-pollinator interaction networks with citizen science data (iNaturalist images).\nWe process images with interacting plant and pollinators using text-promptable image segmentation and identify species with computer vision models like Pl@ntNet.\nWe compare phenology of interacting species inferred from museum specimens and identify pairs with high risks of phenological mismatch under climate change."
   },
   {
-    "objectID": "research/efi/index.html#highlights",
-    "href": "research/efi/index.html#highlights",
-    "title": "NEON phenology forecasting community challenge",
+    "objectID": "research/floralvision/index.html#highlights",
+    "href": "research/floralvision/index.html#highlights",
+    "title": "Monitoring plant-pollinator networks with AI",
     "section": "",
-    "text": "We participated in a community forecast challenge to predict daily plant greenness with our model GPEDM out of 18 models.\nForecasts across teams showed that historical means of greenness on each day of year were difficult to outperform.\nGPEDM had the best performance among similar models that are data-driven, dynamic (includes previous state), and use covariates.\nFor the study sites, several static models or models without covariates had better performances than GPEDM in predicting greenness values.\nGPEDM showed its advantage in accurately predicting the ecologically important greenup transition dates."
+    "text": "We validate and expand plant-pollinator interaction networks with citizen science data (iNaturalist images).\nWe process images with interacting plant and pollinators using text-promptable image segmentation and identify species with computer vision models like Pl@ntNet.\nWe compare phenology of interacting species inferred from museum specimens and identify pairs with high risks of phenological mismatch under climate change."
   },
   {
-    "objectID": "research/efi/index.html#the-forecasting-challenge",
-    "href": "research/efi/index.html#the-forecasting-challenge",
-    "title": "NEON phenology forecasting community challenge",
-    "section": "The forecasting challenge",
-    "text": "The forecasting challenge\n\n\n\nLocations of selected sites and the National Phenology Network’s Historical Annual Spring Indices Anomaly for First Leaf product during the study year of 2021 compared to the 1991–2020 average.\n\n\n\n\n\nThe specific days that each model forecasted and the days that each team submitted forecasts on."
+    "objectID": "research/floralvision/index.html#inaturalist-images-with-plants-and-pollinators",
+    "href": "research/floralvision/index.html#inaturalist-images-with-plants-and-pollinators",
+    "title": "Monitoring plant-pollinator networks with AI",
+    "section": "iNaturalist images with plants and pollinators",
+    "text": "iNaturalist images with plants and pollinators\n\n \n\n\n(Left) An iNaturalist image with bee and with bee removed using LangSAM, text-promptable image segmentation. [Source] (Right) A common Eastern bumble bee Bombus impatiens visiting an unlabeled flowering plant [Source]\n\n\n\n\nA plant-pollinator network generated based on a set of iNaturalist images with both species labeled using Graphistry."
   },
   {
-    "objectID": "research/efi/index.html#our-model",
-    "href": "research/efi/index.html#our-model",
-    "title": "NEON phenology forecasting community challenge",
-    "section": "Our model",
-    "text": "Our model\n\n\n\nGaussian Process time-delay embedding model with a spatial covaraince function layer and a temporal covariance function layer Sugihara et al., 2012"
+    "objectID": "research/floralvision/index.html#whats-the-insect-on",
+    "href": "research/floralvision/index.html#whats-the-insect-on",
+    "title": "Monitoring plant-pollinator networks with AI",
+    "section": "What’s the insect on?",
+    "text": "What’s the insect on?\n\n \n\n\nAn iNaturalist image with bee and with bee removed using LangSAM, text-promptable image segmentation.\n\n\n  \n\n\nExamples of bee removal leading to different plant species identification by Pl@ntNet."
   },
   {
-    "objectID": "research/efi/index.html#example-of-forecasts",
-    "href": "research/efi/index.html#example-of-forecasts",
-    "title": "NEON phenology forecasting community challenge",
-    "section": "Example of forecasts",
-    "text": "Example of forecasts\n\n\n\nAn example of forecasted greenness values (GCC) submitted by teams on 11 May 2021 for Harvard Forest, with PhenoCan images on dates of 15% and 85% greenup."
+    "objectID": "research/floralvision/index.html#phenology-of-interacting-species",
+    "href": "research/floralvision/index.html#phenology-of-interacting-species",
+    "title": "Monitoring plant-pollinator networks with AI",
+    "section": "Phenology of interacting species",
+    "text": "Phenology of interacting species\n\n\n\nExample of small overlap in the seasonal activity of pollinator species (orange) and the flowering of plant species (green).\n\n\n\n\n\nExample of large overlap in the seasonal activity of pollinator species (orange) and the flowering of plant species (green)."
   },
   {
-    "objectID": "research/efi/index.html#model-evaluation",
-    "href": "research/efi/index.html#model-evaluation",
-    "title": "NEON phenology forecasting community challenge",
-    "section": "Model evaluation",
-    "text": "Model evaluation\n\n\n\nMean predictive skill by model relative to the day of year (DOY) Mean null model.\n\n\n\n“For the 15 %, 50 %, and 85 % greenup transition dates, PEG, GPEDM, and greenbears_gams beat the DOY Mean model furthest out”\n\n\n\n\nForecast horizon, or number of days before the transition dates that each forecast model did better at forecasting greenness (GCC) than day of year mean model across the range of all sites."
+    "objectID": "research/velocity/index.html",
+    "href": "research/velocity/index.html",
+    "title": "Climate-phenology mismatch in human-dominated landscapes",
+    "section": "",
+    "text": "Rapidly shifting vegetation phenology has not kept pace with the recent climate change.\nClimate-phenology mismatch is more pronounced in human-dominated landscapes with increasing human population density."
+  },
+  {
+    "objectID": "research/velocity/index.html#highlights",
+    "href": "research/velocity/index.html#highlights",
+    "title": "Climate-phenology mismatch in human-dominated landscapes",
+    "section": "",
+    "text": "Rapidly shifting vegetation phenology has not kept pace with the recent climate change.\nClimate-phenology mismatch is more pronounced in human-dominated landscapes with increasing human population density."
+  },
+  {
+    "objectID": "research/velocity/index.html#abstract",
+    "href": "research/velocity/index.html#abstract",
+    "title": "Climate-phenology mismatch in human-dominated landscapes",
+    "section": "Abstract",
+    "text": "Abstract\nPlants track changing climate partly by shifting their phenology, the timing of recurring biological events. It is unknown whether these observed phenological shifts are sufficient to keep pace with rapid climate changes. Phenological mismatch, or the desynchronization between the timing of critical phenological events, has long been hypothesized but rarely quantified on a large scale. It is even less clear how human activities have contributed to this emergent phenological mismatch. In this study, we used remote sensing observations to systematically evaluate how plant phenological shifts have kept pace with warming trends at the continental scale. In particular, we developed a metric of spatial mismatch that connects empirical spatiotemporal data to ecological theory using the “velocity of change” approach. In northern mid-to high-latitude regions (between 30–70°N) over the last three decades (1981–2014), we found evidence of a widespread mismatch between land surface phenology and climate where isolines of phenology lag behind or move in the opposite direction to the isolines of climate. These mismatches were more pronounced in human-dominated landscapes, suggesting a relationship between human activities and the desynchronization of phenology dynamics with climate variations. Results were corroborated with independent ground observations that indicate the mismatch of spring phenology increases with human population density for several plant species. This study reveals the possibility that not even some of the foremost responses in vegetation activity match the pace of recent warming. This systematic analysis of climate-phenology mismatch has important implications for the sustainable management of vegetation in human-dominated landscapes under climate change."
+  },
+  {
+    "objectID": "research/velocity/index.html#climate-and-phenology-velocity",
+    "href": "research/velocity/index.html#climate-and-phenology-velocity",
+    "title": "Climate-phenology mismatch in human-dominated landscapes",
+    "section": "Climate and phenology velocity",
+    "text": "Climate and phenology velocity\n\n\n\nSchematic diagram showing three scenarios of climate tracking and the corresponding climate-phenology metrics."
+  },
+  {
+    "objectID": "research/velocity/index.html#widespread-cimate-phenology-mismatch",
+    "href": "research/velocity/index.html#widespread-cimate-phenology-mismatch",
+    "title": "Climate-phenology mismatch in human-dominated landscapes",
+    "section": "Widespread cimate-phenology mismatch",
+    "text": "Widespread cimate-phenology mismatch\n\n\n\nSpatial patterns of four climate-phenology metrics. (a) Velocity of mean annual temperature change. (b) Velocity of growing season length change. (c) Difference in direction. (d) Pace of phenology change relative to climate. Panels on the right show the median and 95% intervals of climate-phenology metrics."
+  },
+  {
+    "objectID": "research/velocity/index.html#relationship-with-human-activities",
+    "href": "research/velocity/index.html#relationship-with-human-activities",
+    "title": "Climate-phenology mismatch in human-dominated landscapes",
+    "section": "Relationship with human activities",
+    "text": "Relationship with human activities\n\n\n\nClimate-phenology metrics by land-use types. (a) Map of land-use types in 2000. (b) Distributions of the velocity of mean annual temperature change, the velocity of growing season length change, the difference in direction, and the pacing of phenology relative to climate in five land-use types.\n\n\n\n\n\nRelationship between population density and climate-phenology metrics. (a) Map of population density in the study area in 2000. (b) Velocity of mean annual temperature change, velocity of growing season length change, the difference in direction, and the pacing of phenology relative to climate in five quantiles of population density."
   },
   {
     "objectID": "research/macrophyte/index.html",
