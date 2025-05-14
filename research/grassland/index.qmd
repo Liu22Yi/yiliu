@@ -19,8 +19,9 @@ author:
   - Loralee Larios
   - Michael E. Loik
   - Laura R. Prugh
+  - (^†^ equal contribution)
 date: 2024-10-16
-description: _Nature Ecology & Evolution_ 2024 (* equal contribution)
+description: _Nature Ecology & Evolution_ 2024
 categories:
   - Changing biodiversity
   - First-author

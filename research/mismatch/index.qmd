@@ -6,7 +6,7 @@ author:
   - Stephan B. Munch
   - Kai Zhu
 date: 2023-01-27
-description: _Landscape Ecology_ 2023 (Honorable Mention for Landscape Ecology's Best Article Award)
+description: _Landscape Ecology_ 2023 (Honorable Mention for _Landscape Ecology_'s Best Article Award in 2023)
 categories:
   - Changing phenology
   - Ecological forecasting
