@@ -5,6 +5,9 @@ image: people/headshot/Song.png
 about:
   template: trestles
   links:
+    - text: Google Scholar
+      icon: google
+      url: "https://scholar.google.com/citations?user=Wwzx8YkAAAAJ&hl=zh-CN"
     - text: GitHub
       icon: github
       url: "https://github.com/yiluansong"
