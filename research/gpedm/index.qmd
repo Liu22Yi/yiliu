@@ -19,6 +19,8 @@ keywords:
   - forecasting
   - GPEDM
   - machine learning
+about:
+  template: solana
 format:
   html:
     toc: true
