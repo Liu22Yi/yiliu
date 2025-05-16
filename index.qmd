@@ -1,7 +1,7 @@
 ---
 title: "Yiluan Song"
 subtitle: "global change biology | environmental data science"
-image: people/headshot/Song.png
+image: people/Song/Song.png
 about:
   template: trestles
   links:
