@@ -40,7 +40,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
@@ -138,7 +137,6 @@ document.addEventListener('DOMContentLoaded', function () {
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
-   
   <ul>
   <li><a href="#highlights" id="toc-highlights" class="nav-link active" data-scroll-target="#highlights">Highlights</a></li>
   <li><a href="#gpedm" id="toc-gpedm" class="nav-link" data-scroll-target="#gpedm">GPEDM</a></li>
@@ -153,9 +151,10 @@ document.addEventListener('DOMContentLoaded', function () {
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-about-solana column-body content">
+  <div class="about-entity">
+    <div class="entity-contents">
+      <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Gaussian Process Empirical Dynamic Modeling</h1>
 <p class="subtitle lead">Novel data-driven method to model the nonlinear dynamics of leafing phenology</p>
@@ -165,16 +164,12 @@ document.addEventListener('DOMContentLoaded', function () {
     <div class="quarto-category">Awarded</div>
   </div>
   </div>
-
 <div>
   <div class="description">
     AGU 2020 presentation, ESA 2021 presentation (<a href="https://www.esa.org/stats/" target="blank">E.C. Pielow Award</a>)
   </div>
 </div>
-
-
 <div class="quarto-title-meta">
-
     <div>
     <div class="quarto-title-meta-heading">Authors</div>
     <div class="quarto-title-meta-contents">
@@ -183,30 +178,24 @@ document.addEventListener('DOMContentLoaded', function () {
              <p>Kai Zhu </p>
           </div>
   </div>
-    
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
       <p class="date">August 4, 2021</p>
     </div>
   </div>
-  
-    
   </div>
-  
-
 <div>
   <div class="keywords">
     <div class="block-title">Keywords</div>
     <p>global change biology, environmental data science, phenology, climate change, forecasting, GPEDM, machine learning</p>
   </div>
 </div>
-
-</header>
-
+</header> 
+      <div class="about-contents"><main class="content" id="quarto-document-content">
 
 <section id="highlights" class="level2">
-<h2 class="anchored" data-anchor-id="highlights">Highlights</h2>
+<h2 data-anchor-id="highlights">Highlights</h2>
 <ul>
 <li><strong>We used a novel data-driven method of Gaussian Process Empirical Dynamic Modeling (GPEDM) to forecast forest and grassland vegetative phenology.</strong></li>
 <li><strong>This nonparametric model accounts for nonlinear relationships with environmental variables and past phenology, outperforming traditional parametric methods.</strong></li>
@@ -216,7 +205,7 @@ document.addEventListener('DOMContentLoaded', function () {
 <hr>
 </section>
 <section id="gpedm" class="level2">
-<h2 class="anchored" data-anchor-id="gpedm">GPEDM</h2>
+<h2 data-anchor-id="gpedm">GPEDM</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="1.png" class="img-fluid figure-img"></p>
@@ -231,7 +220,7 @@ document.addEventListener('DOMContentLoaded', function () {
 </div>
 </section>
 <section id="this-study" class="level2">
-<h2 class="anchored" data-anchor-id="this-study">This study</h2>
+<h2 data-anchor-id="this-study">This study</h2>
 <p><img src="3.png" class="img-fluid" alt="Study area for forest land cover in the NEON domain Appalachians_Cumberland Plateau. Raster mask represents pixels with forest land cover. Orange points represent locations of PhenoCams."> <img src="4.png" class="img-fluid" alt="Study area for grassland land cover in the NEON domain Pacific Southwest. Raster mask represents pixels with grassland land cover. Orange points represent locations of PhenoCams."></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -241,7 +230,7 @@ document.addEventListener('DOMContentLoaded', function () {
 </div>
 </section>
 <section id="one-step-ahead-predictions" class="level2">
-<h2 class="anchored" data-anchor-id="one-step-ahead-predictions">One-step ahead predictions</h2>
+<h2 data-anchor-id="one-step-ahead-predictions">One-step ahead predictions</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="6.png" class="img-fluid figure-img"></p>
@@ -251,7 +240,7 @@ document.addEventListener('DOMContentLoaded', function () {
 <p><img src="7.png" class="img-fluid" alt="Observed grassland EVI in black and predicted forest EVI in purple."> <img src="8.png" class="img-fluid" alt="Accuracy of in-sample predictions and three types of out-of-sample predictions (extrapolation over time, over space, over both time and space)for forest EVI."> <img src="9.png" class="img-fluid" alt="Accuracy of in-sample predictions and three types of out-of-sample predictions (extrapolation over time, over space, over both time and space)for grassland EVI."></p>
 </section>
 <section id="multi-steps-ahead-forecasts" class="level2">
-<h2 class="anchored" data-anchor-id="multi-steps-ahead-forecasts">Multi-steps ahead forecasts</h2>
+<h2 data-anchor-id="multi-steps-ahead-forecasts">Multi-steps ahead forecasts</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="10.png" class="img-fluid figure-img"></p>
@@ -266,7 +255,7 @@ document.addEventListener('DOMContentLoaded', function () {
 </div>
 </section>
 <section id="inference" class="level2">
-<h2 class="anchored" data-anchor-id="inference">Inference</h2>
+<h2 data-anchor-id="inference">Inference</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="12.png" class="img-fluid figure-img"></p>
@@ -281,21 +270,24 @@ document.addEventListener('DOMContentLoaded', function () {
 </div>
 </section>
 <section id="green-up-date" class="level2">
-<h2 class="anchored" data-anchor-id="green-up-date">Green-up date</h2>
+<h2 data-anchor-id="green-up-date">Green-up date</h2>
 <p><img src="14.png" class="img-fluid" alt="Forest green-up date estimated from observed EVI and EVI from one-step ahead predictions, in in-sample tests and three types of out-of-sample tests (extrapolation over time, over space, over both time and space)."> <img src="15.png" class="img-fluid" alt="Forest green-up dates estimated from observed EVI and EVI from multi-steps ahead forecasts."></p>
 </section>
 <section id="climate-change" class="level2">
-<h2 class="anchored" data-anchor-id="climate-change">Climate change</h2>
+<h2 data-anchor-id="climate-change">Climate change</h2>
 <p><img src="16.png" class="img-fluid" alt="Forecasted forest EVI under 1°C increase in temperature at one pixel in two years as an example."> <img src="17.png" class="img-fluid" alt="Forest green-up dates estimated from observed EVI and EVI from multi-steps ahead simulations under 1°C warming."></p>
 </section>
 <section id="phenocam-greenness" class="level2">
-<h2 class="anchored" data-anchor-id="phenocam-greenness">PhenoCam Greenness</h2>
+<h2 data-anchor-id="phenocam-greenness">PhenoCam Greenness</h2>
 <p><img src="18.png" class="img-fluid" alt="Observed forest PhenoCam greenness in black and forecasted forest PhenoCam greenness in blue starting from black verticle line."> <img src="19.png" class="img-fluid" alt="Observed grassland PhenoCam greenness in black and forecasted grassland PhenoCam greenness in blue starting from black verticle line."></p>
 
 
 </section>
-
-</main> <!-- /main -->
+</main></div>
+    </div>
+  </div>
+</div>
+ <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -316,13 +308,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
-  const icon = "";
-  const anchorJS = new window.AnchorJS();
-  anchorJS.options = {
-    placement: 'right',
-    icon: icon
-  };
-  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     

@@ -7,15 +7,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Yiluan Song">
-<meta name="author" content="Christopher J. Zajic">
-<meta name="author" content="Taehee Hwang">
-<meta name="author" content="Christopher R. Hakkenberg">
+<meta name="author" content="Stephan B. Munch">
 <meta name="author" content="Kai Zhu">
-<meta name="dcterms.date" content="2021-12-06">
-<meta name="keywords" content="global change biology, environmental data science, phenology, Anthropocene, climate change">
-<meta name="description" content="AGU Advances 2021 (Editor’s Highlight)   Christopher J. Zajic was an undergraduate student at the University of California, Santa Cruz.">
+<meta name="dcterms.date" content="2021-12-17">
+<meta name="keywords" content="global change biology, environmental data science, phenology, climate change, forecasting, GPEDM, machine learning, public health, pollen, wind-pollinated species">
+<meta name="description" content="AGU 2021 presentation   EFI 2022 presentation (EFI Futures Outstanding Presentation Award)">
 
-<title>Yiluan Song - Climate-phenology mismatch in human-dominated landscapes</title>
+<title>Yiluan Song - Forecasting phenology for public health</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -141,10 +139,10 @@ document.addEventListener('DOMContentLoaded', function () {
     <h2 id="toc-title">On this page</h2>
   <ul>
   <li><a href="#highlights" id="toc-highlights" class="nav-link active" data-scroll-target="#highlights">Highlights</a></li>
-  <li><a href="#abstract" id="toc-abstract" class="nav-link" data-scroll-target="#abstract">Abstract</a></li>
-  <li><a href="#climate-and-phenology-velocity" id="toc-climate-and-phenology-velocity" class="nav-link" data-scroll-target="#climate-and-phenology-velocity">Climate and phenology velocity</a></li>
-  <li><a href="#widespread-cimate-phenology-mismatch" id="toc-widespread-cimate-phenology-mismatch" class="nav-link" data-scroll-target="#widespread-cimate-phenology-mismatch">Widespread cimate-phenology mismatch</a></li>
-  <li><a href="#relationship-with-human-activities" id="toc-relationship-with-human-activities" class="nav-link" data-scroll-target="#relationship-with-human-activities">Relationship with human activities</a></li>
+  <li><a href="#background" id="toc-background" class="nav-link" data-scroll-target="#background">Background</a></li>
+  <li><a href="#methods" id="toc-methods" class="nav-link" data-scroll-target="#methods">Methods</a></li>
+  <li><a href="#product" id="toc-product" class="nav-link" data-scroll-target="#product">Product</a></li>
+  <li><a href="#evaluation" id="toc-evaluation" class="nav-link" data-scroll-target="#evaluation">Evaluation</a></li>
   </ul>
 </nav>
     </div>
@@ -154,16 +152,17 @@ document.addEventListener('DOMContentLoaded', function () {
     <div class="entity-contents">
       <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Climate-phenology mismatch in human-dominated landscapes</h1>
+<h1 class="title">Forecasting phenology for public health</h1>
+<p class="subtitle lead">PhenoForecast: Ecological forecasting of leafing and flowering phenology during climate change to inform public health</p>
   <div class="quarto-categories">
-    <div class="quarto-category">Changing phenology</div>
+    <div class="quarto-category">Ecological forecasting</div>
     <div class="quarto-category">First-author</div>
     <div class="quarto-category">Awarded</div>
   </div>
   </div>
 <div>
   <div class="description">
-    <em>AGU Advances</em> 2021 (Editor’s Highlight) <br> Christopher J. Zajic was an undergraduate student at the University of California, Santa Cruz.
+    AGU 2021 presentation <br> EFI 2022 presentation (<a href="https://ecoforecast.org/efi-futures-outstanding-student-presentation-award/#2022-results">EFI Futures Outstanding Presentation Award</a>)
   </div>
 </div>
 <div class="quarto-title-meta">
@@ -171,82 +170,109 @@ document.addEventListener('DOMContentLoaded', function () {
     <div class="quarto-title-meta-heading">Authors</div>
     <div class="quarto-title-meta-contents">
              <p><strong>Yiluan Song</strong> </p>
-             <p>Christopher J. Zajic </p>
-             <p>Taehee Hwang </p>
-             <p>Christopher R. Hakkenberg </p>
+             <p>Stephan B. Munch </p>
              <p>Kai Zhu </p>
           </div>
   </div>
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">December 6, 2021</p>
+      <p class="date">December 17, 2021</p>
     </div>
   </div>
   </div>
 <div>
   <div class="keywords">
     <div class="block-title">Keywords</div>
-    <p>global change biology, environmental data science, phenology, Anthropocene, climate change</p>
+    <p>global change biology, environmental data science, phenology, climate change, forecasting, GPEDM, machine learning, public health, pollen, wind-pollinated species</p>
   </div>
 </div>
-</header> <div class="about-links">
-  <a href="https://doi.org/10.1029/2021AV000431" class="about-link" rel="" target="">
-    <i class="bi bi-pdf"></i>
-     <span class="about-link-text">Paper</span>
-  </a>
-  <a href="https://github.com/zhulabgroup/song-2021-agu-adv" class="about-link" rel="" target="">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">GitHub</span>
-  </a>
-</div>
+</header> 
       <div class="about-contents"><main class="content" id="quarto-document-content">
 
 <section id="highlights" class="level2">
 <h2 data-anchor-id="highlights">Highlights</h2>
 <ul>
-<li><strong>Rapidly shifting vegetation phenology has not kept pace with the recent climate change.</strong></li>
-<li><strong>Climate-phenology mismatch is more pronounced in human-dominated landscapes with increasing human population density.</strong></li>
+<li><strong>We aimed to deliver near-term forecasts of vegetative and reproductive phenology of wind-pollinated plants that induce allergy.</strong></li>
+<li><strong>We leveraged diverse phenology data including remote sensing, phenophase observations, and airborne pollen concentrations.</strong></li>
+<li><strong>We used spatiotemporal Gaussian Process Empirical Dynamic Modeling (GPEDM) to forecast maps of phenology in the continental US.</strong></li>
+<li><strong>We implemented infrastructure to deliver forecasts every day for the following 35 days on our web app, PhenoForecast.</strong></li>
 </ul>
-</section>
-<section id="abstract" class="level2">
-<h2 data-anchor-id="abstract">Abstract</h2>
-<p>Plants track changing climate partly by shifting their phenology, the timing of recurring biological events. It is unknown whether these observed phenological shifts are sufficient to keep pace with rapid climate changes. Phenological mismatch, or the desynchronization between the timing of critical phenological events, has long been hypothesized but rarely quantified on a large scale. It is even less clear how human activities have contributed to this emergent phenological mismatch. In this study, we used remote sensing observations to systematically evaluate how plant phenological shifts have kept pace with warming trends at the continental scale. In particular, we developed a metric of spatial mismatch that connects empirical spatiotemporal data to ecological theory using the “velocity of change” approach. In northern mid-to high-latitude regions (between 30–70°N) over the last three decades (1981–2014), we found evidence of a widespread mismatch between land surface phenology and climate where isolines of phenology lag behind or move in the opposite direction to the isolines of climate. These mismatches were more pronounced in human-dominated landscapes, suggesting a relationship between human activities and the desynchronization of phenology dynamics with climate variations. Results were corroborated with independent ground observations that indicate the mismatch of spring phenology increases with human population density for several plant species. This study reveals the possibility that not even some of the foremost responses in vegetation activity match the pace of recent warming. This systematic analysis of climate-phenology mismatch has important implications for the sustainable management of vegetation in human-dominated landscapes under climate change.</p>
 <hr>
 <div style="position: relative; width: 100%; padding-top: 56.25%; height: 0; overflow: hidden;">
-<p><iframe src="https://www.youtube.com/embed/1D3H6kPDXzk?si=HhKtt6RaYhUCEsD2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></p>
+<iframe src="https://www.youtube.com/embed/ymVsFQb3_Kk?si=ohg9sjBfV_asN2RM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+</iframe>
 </div>
 </section>
-<section id="climate-and-phenology-velocity" class="level2">
-<h2 data-anchor-id="climate-and-phenology-velocity">Climate and phenology velocity</h2>
+<section id="background" class="level2">
+<h2 data-anchor-id="background">Background</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="1.png" class="img-fluid figure-img"></p>
-<figcaption>Schematic diagram showing three scenarios of climate tracking and the corresponding climate-phenology metrics.</figcaption>
+<figcaption>Synthesizing phenology data from multiple sources.</figcaption>
 </figure>
 </div>
 </section>
-<section id="widespread-cimate-phenology-mismatch" class="level2">
-<h2 data-anchor-id="widespread-cimate-phenology-mismatch">Widespread cimate-phenology mismatch</h2>
+<section id="methods" class="level2">
+<h2 data-anchor-id="methods">Methods</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="2.png" class="img-fluid figure-img"></p>
-<figcaption>Spatial patterns of four climate-phenology metrics. <strong>(a)</strong> Velocity of mean annual temperature change. <strong>(b)</strong> Velocity of growing season length change. <strong>(c)</strong> Difference in direction. <strong>(d)</strong> Pace of phenology change relative to climate. Panels on the right show the median and 95% intervals of climate-phenology metrics.</figcaption>
+<p><img src="2.jpg" class="img-fluid figure-img"></p>
+<figcaption>Infrastructure to collect data, fit models, make predictions, and deliver forecasts.</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="3.jpg" class="img-fluid figure-img"></p>
+<figcaption>Four levels of the model behind PhenoForecast and key data sources.</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="4.jpg" class="img-fluid figure-img"></p>
+<figcaption>Steps in each level of the model.</figcaption>
 </figure>
 </div>
 </section>
-<section id="relationship-with-human-activities" class="level2">
-<h2 data-anchor-id="relationship-with-human-activities">Relationship with human activities</h2>
+<section id="product" class="level2">
+<h2 data-anchor-id="product">Product</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="3.png" class="img-fluid figure-img"></p>
-<figcaption>Climate-phenology metrics by land-use types. <strong>(a)</strong> Map of land-use types in 2000. <strong>(b)</strong> Distributions of the velocity of mean annual temperature change, the velocity of growing season length change, the difference in direction, and the pacing of phenology relative to climate in five land-use types.</figcaption>
+<p><img src="5.png" class="img-fluid figure-img"></p>
+<figcaption>Screenshot of PhenoForecast, showing forecasts of EVI.</figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="4.png" class="img-fluid figure-img"></p>
-<figcaption>Relationship between population density and climate-phenology metrics. <strong>(a)</strong> Map of population density in the study area in 2000. <strong>(b)</strong> Velocity of mean annual temperature change, velocity of growing season length change, the difference in direction, and the pacing of phenology relative to climate in five quantiles of population density.</figcaption>
+<p><img src="6.png" class="img-fluid figure-img"></p>
+<figcaption>Screenshot of PhenoForecast, showing forecasts of leaf phenology.</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="7.png" class="img-fluid figure-img"></p>
+<figcaption>Screenshot of PhenoForecast, showing forecasts of flower phenology.</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="8.png" class="img-fluid figure-img"></p>
+<figcaption>Screenshot of PhenoForecast, showing forecasts of flower phenology.</figcaption>
+</figure>
+</div>
+</section>
+<section id="evaluation" class="level2">
+<h2 data-anchor-id="evaluation">Evaluation</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="9.png" class="img-fluid figure-img"></p>
+<figcaption>Correlation between observed and predicted EVI.</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="10.jpg" class="img-fluid figure-img"></p>
+<figcaption>Fitted and forecasted EVI at six randomly selected sites. Black lines show observations; blue lines and ribbons show predictions with 95% intervals.</figcaption>
 </figure>
 </div>
 

@@ -7,15 +7,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Yiluan Song">
-<meta name="author" content="Christopher J. Zajic">
-<meta name="author" content="Taehee Hwang">
-<meta name="author" content="Christopher R. Hakkenberg">
 <meta name="author" content="Kai Zhu">
-<meta name="dcterms.date" content="2021-12-06">
-<meta name="keywords" content="global change biology, environmental data science, phenology, Anthropocene, climate change">
-<meta name="description" content="AGU Advances 2021 (Editor’s Highlight)   Christopher J. Zajic was an undergraduate student at the University of California, Santa Cruz.">
+<meta name="author" content="as a team in a worldwide collaborative study">
+<meta name="dcterms.date" content="2024-10-16">
+<meta name="keywords" content="global change biology, environmental data science, biodiversity, climate change, conservation">
+<meta name="description" content="Manuscript in Preparation">
 
-<title>Yiluan Song - Climate-phenology mismatch in human-dominated landscapes</title>
+<title>Yiluan Song - Species distribution modeling with machine learning</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -141,10 +139,9 @@ document.addEventListener('DOMContentLoaded', function () {
     <h2 id="toc-title">On this page</h2>
   <ul>
   <li><a href="#highlights" id="toc-highlights" class="nav-link active" data-scroll-target="#highlights">Highlights</a></li>
-  <li><a href="#abstract" id="toc-abstract" class="nav-link" data-scroll-target="#abstract">Abstract</a></li>
-  <li><a href="#climate-and-phenology-velocity" id="toc-climate-and-phenology-velocity" class="nav-link" data-scroll-target="#climate-and-phenology-velocity">Climate and phenology velocity</a></li>
-  <li><a href="#widespread-cimate-phenology-mismatch" id="toc-widespread-cimate-phenology-mismatch" class="nav-link" data-scroll-target="#widespread-cimate-phenology-mismatch">Widespread cimate-phenology mismatch</a></li>
-  <li><a href="#relationship-with-human-activities" id="toc-relationship-with-human-activities" class="nav-link" data-scroll-target="#relationship-with-human-activities">Relationship with human activities</a></li>
+  <li><a href="#data-collection" id="toc-data-collection" class="nav-link" data-scroll-target="#data-collection">Data collection</a></li>
+  <li><a href="#decision-tree-based-classifiers" id="toc-decision-tree-based-classifiers" class="nav-link" data-scroll-target="#decision-tree-based-classifiers">Decision tree-based classifiers</a></li>
+  <li><a href="#the-output" id="toc-the-output" class="nav-link" data-scroll-target="#the-output">The output</a></li>
   </ul>
 </nav>
     </div>
@@ -154,50 +151,47 @@ document.addEventListener('DOMContentLoaded', function () {
     <div class="entity-contents">
       <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Climate-phenology mismatch in human-dominated landscapes</h1>
+<h1 class="title">Species distribution modeling with machine learning</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">Changing phenology</div>
+    <div class="quarto-category">Changing biodiversity</div>
     <div class="quarto-category">First-author</div>
-    <div class="quarto-category">Awarded</div>
   </div>
   </div>
 <div>
   <div class="description">
-    <em>AGU Advances</em> 2021 (Editor’s Highlight) <br> Christopher J. Zajic was an undergraduate student at the University of California, Santa Cruz.
+    Manuscript in Preparation
   </div>
 </div>
 <div class="quarto-title-meta">
     <div>
     <div class="quarto-title-meta-heading">Authors</div>
     <div class="quarto-title-meta-contents">
-             <p><strong>Yiluan Song</strong> </p>
-             <p>Christopher J. Zajic </p>
-             <p>Taehee Hwang </p>
-             <p>Christopher R. Hakkenberg </p>
+             <p>Yiluan Song </p>
              <p>Kai Zhu </p>
+             <p>as a team in a worldwide collaborative study </p>
           </div>
   </div>
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">December 6, 2021</p>
+      <p class="date">October 16, 2024</p>
     </div>
   </div>
   </div>
 <div>
   <div class="keywords">
     <div class="block-title">Keywords</div>
-    <p>global change biology, environmental data science, phenology, Anthropocene, climate change</p>
+    <p>global change biology, environmental data science, biodiversity, climate change, conservation</p>
   </div>
 </div>
 </header> <div class="about-links">
-  <a href="https://doi.org/10.1029/2021AV000431" class="about-link" rel="" target="">
-    <i class="bi bi-pdf"></i>
-     <span class="about-link-text">Paper</span>
-  </a>
-  <a href="https://github.com/zhulabgroup/song-2021-agu-adv" class="about-link" rel="" target="">
+  <a href="https://github.com/zhulabgroup/demo-sdm" class="about-link" rel="" target="">
     <i class="bi bi-github"></i>
      <span class="about-link-text">GitHub</span>
+  </a>
+  <a href="https://colab.research.google.com/drive/1loHlp0_kgbmSSP_4XckYDUmdXDJW3X-A?usp=sharing" class="about-link" rel="" target="">
+    <i class="bi bi-google"></i>
+     <span class="about-link-text">Google Colab</span>
   </a>
 </div>
       <div class="about-contents"><main class="content" id="quarto-document-content">
@@ -205,48 +199,57 @@ document.addEventListener('DOMContentLoaded', function () {
 <section id="highlights" class="level2">
 <h2 data-anchor-id="highlights">Highlights</h2>
 <ul>
-<li><strong>Rapidly shifting vegetation phenology has not kept pace with the recent climate change.</strong></li>
-<li><strong>Climate-phenology mismatch is more pronounced in human-dominated landscapes with increasing human population density.</strong></li>
+<li><strong>This is a contribution to a worldwide collaborative study about structural uncertainty in species distribution models (SDMs).</strong><br>
+</li>
+<li><strong>We predicted the distributions of the species <em>Prionailurus bengalensis</em> and <em>Zamia Prasina</em>.</strong><br>
+</li>
+<li><strong>We adopted an ensemble approach that averages predictions from four decision tree-based classifiers: Random Forests, Extra Trees, XGBoost, and LightGBM.</strong></li>
 </ul>
 </section>
-<section id="abstract" class="level2">
-<h2 data-anchor-id="abstract">Abstract</h2>
-<p>Plants track changing climate partly by shifting their phenology, the timing of recurring biological events. It is unknown whether these observed phenological shifts are sufficient to keep pace with rapid climate changes. Phenological mismatch, or the desynchronization between the timing of critical phenological events, has long been hypothesized but rarely quantified on a large scale. It is even less clear how human activities have contributed to this emergent phenological mismatch. In this study, we used remote sensing observations to systematically evaluate how plant phenological shifts have kept pace with warming trends at the continental scale. In particular, we developed a metric of spatial mismatch that connects empirical spatiotemporal data to ecological theory using the “velocity of change” approach. In northern mid-to high-latitude regions (between 30–70°N) over the last three decades (1981–2014), we found evidence of a widespread mismatch between land surface phenology and climate where isolines of phenology lag behind or move in the opposite direction to the isolines of climate. These mismatches were more pronounced in human-dominated landscapes, suggesting a relationship between human activities and the desynchronization of phenology dynamics with climate variations. Results were corroborated with independent ground observations that indicate the mismatch of spring phenology increases with human population density for several plant species. This study reveals the possibility that not even some of the foremost responses in vegetation activity match the pace of recent warming. This systematic analysis of climate-phenology mismatch has important implications for the sustainable management of vegetation in human-dominated landscapes under climate change.</p>
-<hr>
-<div style="position: relative; width: 100%; padding-top: 56.25%; height: 0; overflow: hidden;">
-<p><iframe src="https://www.youtube.com/embed/1D3H6kPDXzk?si=HhKtt6RaYhUCEsD2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></p>
-</div>
-</section>
-<section id="climate-and-phenology-velocity" class="level2">
-<h2 data-anchor-id="climate-and-phenology-velocity">Climate and phenology velocity</h2>
+<section id="data-collection" class="level2">
+<h2 data-anchor-id="data-collection">Data collection</h2>
+<p>We retrieved species occurrence data from <a href="https://doi.org/10.15468/dd.vxc7bu">GBIF</a> and environmental predictors from <a href="https://chelsa-climate.org/">CHELSA</a>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="1.png" class="img-fluid figure-img"></p>
-<figcaption>Schematic diagram showing three scenarios of climate tracking and the corresponding climate-phenology metrics.</figcaption>
+<figcaption>Locations of <em>P. bengalensis</em> presence retrieved from GBIF data and locations of pseudo-absence generated in random.</figcaption>
 </figure>
 </div>
 </section>
-<section id="widespread-cimate-phenology-mismatch" class="level2">
-<h2 data-anchor-id="widespread-cimate-phenology-mismatch">Widespread cimate-phenology mismatch</h2>
+<section id="decision-tree-based-classifiers" class="level2">
+<h2 data-anchor-id="decision-tree-based-classifiers">Decision tree-based classifiers</h2>
+<p>Our method was adapted from <a href="https://daniel-furman.github.io/Python-species-distribution-modeling/">Daniel Furman’s tutorial</a> on species distribution modeling with python. We implemented regularization for each classifier.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="2.png" class="img-fluid figure-img"></p>
-<figcaption>Spatial patterns of four climate-phenology metrics. <strong>(a)</strong> Velocity of mean annual temperature change. <strong>(b)</strong> Velocity of growing season length change. <strong>(c)</strong> Difference in direction. <strong>(d)</strong> Pace of phenology change relative to climate. Panels on the right show the median and 95% intervals of climate-phenology metrics.</figcaption>
+<figcaption>Predicted probability of presence of <em>P. bengalensis</em> using Random Forests.</figcaption>
 </figure>
 </div>
-</section>
-<section id="relationship-with-human-activities" class="level2">
-<h2 data-anchor-id="relationship-with-human-activities">Relationship with human activities</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="3.png" class="img-fluid figure-img"></p>
-<figcaption>Climate-phenology metrics by land-use types. <strong>(a)</strong> Map of land-use types in 2000. <strong>(b)</strong> Distributions of the velocity of mean annual temperature change, the velocity of growing season length change, the difference in direction, and the pacing of phenology relative to climate in five land-use types.</figcaption>
+<figcaption>Predicted probability of presence of <em>P. bengalensis</em> using Extra Trees.</figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="4.png" class="img-fluid figure-img"></p>
-<figcaption>Relationship between population density and climate-phenology metrics. <strong>(a)</strong> Map of population density in the study area in 2000. <strong>(b)</strong> Velocity of mean annual temperature change, velocity of growing season length change, the difference in direction, and the pacing of phenology relative to climate in five quantiles of population density.</figcaption>
+<figcaption>Predicted probability of presence of <em>P. bengalensis</em> using XGBoost.</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="5.png" class="img-fluid figure-img"></p>
+<figcaption>Predicted probability of presence of <em>P. bengalensis</em> using LightGBM.</figcaption>
+</figure>
+</div>
+</section>
+<section id="the-output" class="level2">
+<h2 data-anchor-id="the-output">The output</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="6.png" class="img-fluid figure-img"></p>
+<figcaption>Predicted distribution of <em>P. bengalensis</em> by averaging the probabilities of presence from the four classifiers.</figcaption>
 </figure>
 </div>
 
