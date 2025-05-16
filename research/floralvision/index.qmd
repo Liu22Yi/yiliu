@@ -32,33 +32,35 @@ format:
 
 ## Highlights
 
-- **We validate and expand plant-pollinator interaction networks with citizen science data (iNaturalist images).**
-- **We process images with interacting plant and pollinators using text-promptable image segmentation and identify species with computer vision models like Pl@ntNet.**
-- **We compare phenology of interacting species inferred from museum specimens and identify pairs with high risks of phenological mismatch under climate change.**
+-   **We validate and expand plant-pollinator interaction networks with citizen science data (iNaturalist images).**
+-   **We process images with interacting plant and pollinators using text-promptable image segmentation and identify species with computer vision models like Pl\@ntNet.**
+-   **We compare phenology of interacting species inferred from museum specimens and identify pairs with high risks of phenological mismatch under climate change.**
 
----
+------------------------------------------------------------------------
 
 ## iNaturalist images with plants and pollinators
 
-<div style="text-align: center;">
-![](1.jpeg){height=300px} ![](2.jpeg){height=300px}
-</div>
-<figcaption>(Left) An iNaturalist image with bee and with bee removed using LangSAM, text-promptable image segmentation. [<a href="https://www.inaturalist.org/observations/235608825">Source</a>] (Right) A common Eastern bumble bee <i>Bombus impatiens</i> visiting an unlabeled flowering plant [<a href="https://www.inaturalist.org/observations/237010203">Source</a>]</figcaption>
+::: {style="text-align: center;"}
+![](1.jpeg){height="300px"} ![](2.jpeg){height="300px"}
+:::
+
+<figcaption>(Left) An iNaturalist image with bee and with bee removed using LangSAM, text-promptable image segmentation. \[<a href="https://www.inaturalist.org/observations/235608825">Source</a>\] (Right) A common Eastern bumble bee <i>Bombus impatiens</i> visiting an unlabeled flowering plant \[<a href="https://www.inaturalist.org/observations/237010203">Source</a>\]</figcaption>
 
 ![A plant-pollinator network generated based on a set of iNaturalist images with both species labeled using Graphistry.](3.png)
 
 ## What's the insect on?
 
-<div style="text-align: center;">
-![](4.png){width=40%} ![](5.png){width=40%}
-</div>
+::: {style="text-align: center;"}
+![](4.png){width="40%"} ![](5.png){width="40%"}
+:::
 
 <figcaption>An iNaturalist image with bee and with bee removed using LangSAM, text-promptable image segmentation.</figcaption>
 
-<div style="text-align: center;">
-![](6.png){width=30%} ![](7.png){width=30%} ![](8.png){width=30%}
-</div>
-<figcaption>Examples of bee removal leading to different plant species identification by Pl@ntNet.</figcaption>
+::: {style="text-align: center;"}
+![](6.png){width="30%"} ![](7.png){width="30%"} ![](8.png){width="30%"}
+:::
+
+<figcaption>Examples of bee removal leading to different plant species identification by Pl\@ntNet.</figcaption>
 
 ## Phenology of interacting species
 
