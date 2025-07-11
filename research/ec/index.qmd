@@ -1,0 +1,17 @@
+---
+title: "Demo of the Latitude-month Diagram Idea"
+about:
+  template: solana
+format:
+  html:
+    code-fold: true
+    toc: true
+---
+
+# Flowering time sensitivity
+
+- **We developed a method to quantify the differences in the sensitivity of plant phenology to temperature over space and over time, taking the uncertainty of both estimates into consideration.**
+- **We compared spatial and temporal sensitivities in multiple wind-pollinated species to evaluate the use of space-for-time substitution in forecasting their phenology over time.**
+
+---
+# Species distribution change vs phenology change

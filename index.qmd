@@ -1,22 +1,22 @@
 ---
-title: "Yiluan Song"
-subtitle: "global change biology | environmental data science"
-image: people/Song/Song.png
+title: "Yi Liu"
+subtitle: "global change | data science"
+image: people/Liu/Liu.jpg
 about:
   template: trestles
   links:
     - text: Google Scholar
       icon: google
-      url: "https://scholar.google.com/citations?user=Wwzx8YkAAAAJ&hl=zh-CN"
+      url: "https://scholar.google.com/citations?user=kni68KUAAAAJ&hl=en"
     - text: GitHub
       icon: github
-      url: "https://github.com/yiluansong"
+      url: "https://github.com/Liu22Yi"
     - text: Email
       icon: envelope
-      url: "mailto:songyl@edu"
+      url: "mailto:yia@umich.edu"
     - text: CV
       icon: file-person
-      url: "https://docs.google.com/document/d/1Hxwe0iR8H5X0eXnYDAnElDwA4bijcMan3mNqRyE2c-o/edit?usp=drive_link"
+      url: "https://drive.google.com/file/d/12w0-Rx9fxd9LDoAhOSv4HRWRWTi2FkOV/view"
 comments: false
 ---
 
@@ -24,19 +24,15 @@ comments: false
 
 ## Bio
 
-I'm a Schmidt AI in Science Postdoctoral Fellow at the University of Michigan.
+I’m a PhD student at the University of Michigan, studying the impacts of climate change. My research draws from a broad range of disciplines, reflecting my diverse academic background. I began my journey as an undergraduate trained in hydrology, with a research focus on climate and meteorology. Later, I joined a quantitative ecology group, where I deepened my understanding of ecological systems and statistical methods.
 
-My research program operates at the intersection of environmental data science and global change biology. I aim to provide both theoretical insights and practical solutions to the challenges posed by our rapidly changing world.
-
-Over the years, I have committed to advancing our understanding of how climate change impacts phenology and biodiversity, with implications for both natural and social systems. My current work further integrates AI methodologies with ecological research. My research vision centers on three key pillars: harnessing big data, informing decision-making, and advancing ecological theories.
+I enjoy connecting my research with everyday life. I’m a passionate observer of nature and often use observation apps to enhance my experiences outdoors. I’m especially interested in integrating these observations into my scientific work. I also love watching science channels and drawing inspiration from creative ideas across different fields. I appreciate unconventional thinking and enjoy exploring bold, “crazy” ideas.
 
 <p></p>
 
 ## Research directions
 
-- Changing phenology
-- Changing biodiversity
-- Ecological forecasting
-- Allergen phenology
+- Wind speed change
+- Ecosystem change
 
 :::

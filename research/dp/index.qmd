@@ -1,0 +1,477 @@
+---
+title: Ecosystem change
+about:
+  template: solana
+format:
+  html:
+    toc: true
+---
+
+```{r setup, include=FALSE}
+# set up
+library(ggplot2)
+library(dplyr)
+library(readr)
+library(tidyr)
+# ln -s /Volumes/seas-zhukai/proj-phenology-range data
+
+my_theme <- function() {
+  theme_classic(base_size = 14) +
+  theme(
+    axis.title = element_text(size = 16),
+    axis.text = element_text(size = 14),
+   #plot.title = element_text(size = 18, face = "bold"),
+    #plot.subtitle = element_text(size = 16),
+    #legend.title = element_text(size = 14, face = "bold"),
+    #legend.text = element_text(size = 12)
+  )
+}
+
+theme_set(my_theme())
+
+knitr::opts_chunk$set(
+  message = FALSE,
+  warning = FALSE
+)
+```
+
+# Climate Warming Drives Isotherm Shifts Across Space and Time
+
+```{r fig.width=2, fig.height=5, include=FALSE}
+# plot the distribution change
+
+library(ggplot2)
+
+segments <- data.frame(
+  lat_start = c(26, 27),
+  lat_end   = c(39, 40),
+  period    = c("Before warming", "After warming")
+)
+
+fig_lat <- ggplot(segments) +
+  geom_rect(
+    aes(
+      xmin = -1, xmax = 1,
+      ymin = lat_start, ymax = lat_end,
+      fill = period
+    ),
+    alpha = 0.6
+  ) +
+  scale_y_continuous(name = "Latitude (°N)", limits = c(20, 50), breaks = seq(20, 50, 10)) +
+  # labs(fill = "10–15°C \nTemperature Range") +
+  #   guides(fill = guide_legend(direction = "vertical")) +   # Make legend items vertical
+  theme(
+    legend.position = "none",           # Top-left corner
+    # legend.justification = c(0, 1),      # Justify to top-left
+    axis.title.x = element_blank(),
+    axis.text.x  = element_blank(),
+    axis.ticks.x = element_blank(),
+    axis.line.x   = element_blank()   # This removes the y-axis line
+  )
+
+# print(fig_lat)
+```
+
+```{r fig.width=5, fig.height=2, include=FALSE}
+# plot the phenology change
+
+segments <- data.frame(
+  lat_start = c(2, 1.9, 8,8.1),
+  lat_end   = c(5, 4.9, 11, 11.1),
+  period    = c("Before warming", "After warming", "Before warming", "After warming")
+)
+
+fig_tem <- ggplot(segments) +
+  geom_rect(
+    aes(
+      ymin = -1, ymax = 1,
+      xmin = lat_start, xmax = lat_end,
+      fill = period
+    ),
+    alpha = 0.6
+  ) +
+    xlim(0.8,12.2) +
+scale_x_continuous(
+  name = "Month",
+  breaks = 1:12,                 # Show all months
+  labels = month.abb,            # Use abbreviated month names
+  limits = c(1, 12)              # Force axis to span January to December
+)+
+  theme(
+    legend.position = "none",
+    axis.title.y = element_blank(),
+    axis.text.y  = element_blank(),
+    axis.ticks.y = element_blank(),
+    axis.line.y  = element_blank()
+  )
+
+
+# print(fig_tem)
+```
+
+```{r include=FALSE}
+# prepare temperature data
+
+temperature_matrix_final_full <- read_rds("1992-2018_month_latband_tem.rds")
+
+library(lubridate)
+
+# Convert the wide-format data into a long format for plotting
+temperature_long <- temperature_matrix_final_full %>%
+  pivot_longer(
+    cols = `1`:`12`,  # Explicitly use all month columns (1 to 12)
+    names_to = "Month", 
+    values_to = "Temperature"
+  ) %>%
+  mutate(
+    Month = as.integer(Month),  # Convert month column to integer
+    Date = ymd(paste(Year, Month, "01", sep = "-"))  # Create a Date column for plotting
+  )
+
+library(tidyr)
+
+# Perform linear regression for each Latitude_Band and Month
+regression_results <- temperature_long %>%
+  group_by(Latitude_Band, Month) %>%
+  summarize(
+    slope = coef(lm(Temperature ~ Year))[2],  # Extract slope (m)
+    intercept = coef(lm(Temperature ~ Year))[1]  # Extract intercept (b)
+  )
+
+# Function to calculate temperature for a given year
+calculate_temperature <- function(year, slope, intercept) {
+  slope * year + intercept
+}
+
+# Add calculated temperatures for 1992 and 2018 to the regression results
+temperature_1992_2018 <- regression_results %>%
+  mutate(
+    Temperature_1992 = calculate_temperature(1992, slope, intercept),
+    Temperature_2018 = calculate_temperature(2018, slope, intercept),
+    Temperature_Change = Temperature_2018 - Temperature_1992
+  )
+```
+
+```{r include=FALSE}
+# plot the real isotherm change in the latitude-month plot
+
+library(metR)
+
+# Combine the two matrices into one long-format dataset for plotting
+temperature_plot_data <- temperature_1992_2018 %>%
+  dplyr::select(Latitude_Band, Month, Temperature_1992, Temperature_2018) %>%
+  pivot_longer(
+    cols = c(Temperature_1992, Temperature_2018),
+    names_to = "Year",
+    values_to = "Temperature"
+  ) %>%
+  mutate(
+    Year = recode(Year, "Temperature_1992" = "1992", "Temperature_2018" = "2018"),  # Clean up names
+    Month = as.numeric(Month),  # Ensure Month is numeric for proper plotting
+    Latitude_Band = as.numeric(Latitude_Band)  # Ensure Latitude_Band is numeric
+  )
+
+# Create the contour plot with labels
+p <- ggplot(temperature_plot_data, aes(x = Month, y = Latitude_Band, z = Temperature)) +
+  geom_contour(aes(color = Year), bins = 10, size = 0.7) +  # Contour lines for both years
+  geom_text_contour(
+    data = filter(temperature_plot_data, Year == "1992"),  # Only label black lines (1992)
+    aes(label = round(stat(level))),  # Round contour levels to integers
+    bins = 10,
+    size = 3,
+    color = "black"  # Ensure labels are black
+  ) +
+  scale_color_manual(values = c("1992" = "#00BFC4", "2018" = "#F8766D")) +  # Black for 1992, Red for 2018
+  labs(
+    title = "", # Temperature Contour Plot (1992 vs. 2018)
+    x = " ",
+    y = " ",
+    color = "Year"
+  ) +
+  scale_y_continuous(limits = c(20, 50), breaks = seq(20, 50, 10)) +
+  scale_x_continuous(breaks = 1:12, labels = month.abb) +  # Format x-axis as months
+  theme(
+    legend.position = "top",
+    axis.text.x = element_text(angle = 45, hjust = 1)
+  ) 
+# print(p)
+```
+
+```{r include=FALSE}
+# set the layout
+
+library(patchwork)
+
+layout <- c(
+   patchwork::area(t=1,l=1,b=2,r=1),
+   patchwork::area(t=1,l=2,b=2,r=5),
+   patchwork::area(t=3,l=2,b=3,r=5)
+)
+
+# plot(layout)
+```
+
+```{r fig.width=10, fig.height=8}
+# combine the figures
+
+# Adjust the margins and layout
+combined_plot <- fig_lat + p + fig_tem +
+  plot_layout(design = layout) +
+  plot_annotation(tag_levels = "a") 
+
+
+# Print the combined plot
+print(combined_plot)
+```
+
+-   Figure 1 illustrates how shifts in species distributions and phenological patterns represent a projection of isotherm changes onto spatial and temporal dimensions. Climate warming serves as the primary driver underlying anticipated alterations in species distributions and phenological timing.
+
+# Interpreting Space-Time Isotherm Plots and Species Responses
+
+When analyzing space-time isotherm plots, we expect species to track climate change by moving perpendicular to the isotherms (i.e., following the shortest path to maintain their preferred temperature). However, it is important to clarify the relative scales of the x- and y-axes:
+
+## Standardize the axes to represent equivalent temperature changes per unit
+
+```{r}
+# figure of isotherm line change with temperature scaled axes
+
+# Parameters
+n_lines <- 5           # Number of lines in each group
+spacing <- 1           # Vertical spacing between lines
+shift_up <- 0.1          # Upward shift for the second group
+x_range <- c(0, 5)    # X-axis range
+
+# Create data for group 1
+group1 <- lapply(1:n_lines, function(i) {
+  data.frame(
+    x = x_range,
+    y = x_range + (i - 3) * spacing,
+    group = paste0("Group 1, Line ", i)
+  )
+}) %>% bind_rows()
+
+# Create data for group 2 (shifted up)
+group2 <- lapply(1:n_lines, function(i) {
+  data.frame(
+    x = x_range,
+    y = x_range + (i - 3) * spacing + shift_up,
+    group = paste0("Group 2, Line ", i)
+  )
+}) %>% bind_rows()
+
+# Combine and add group variable
+group1$set <- "1992"
+group2$set <- "2018"
+all_lines <- bind_rows(group1, group2)
+
+# Plot
+ggplot(all_lines, aes(x = x, y = y, group = group, color = set)) +
+  geom_line(size = 1) +
+  scale_color_manual(values = c("1992" = "#00BFC4", "2018" = "#F8766D")) +
+  labs(
+    title = " ",
+    color = "Year",
+    y = "Latitude scaled by\n temperature lapse rate",
+    x = "Month scaled by\n temperature lapse rate",
+  ) +
+  theme(legend.position = "bottom",
+            axis.text.y  = element_blank(),
+    axis.ticks.y = element_blank(),
+    axis.text.x  = element_blank(),
+    axis.ticks.x = element_blank()) +
+ coord_fixed(ratio = 1, xlim = c(0, 3), ylim = c(0, 3))
+
+```
+
+-   The axes are standardized to represent equivalent temperature changes per unit (i.e., scaling by the lapse rate, as demonstrated in the [bird paper](https://www.nature.com/articles/s41559-024-02536-z). In this figure, we focus specifically on spring months.
+
+In this scale, we have two expecations: 
+
+1. Perpendicular Movement: species move perpendicularly to the isotherm, which means the species move the same temperature in both direction. In the [bird paper](https://www.nature.com/articles/s41559-024-02536-z), we should expect that, after dividing the temperature change by the lapse rate, the shortest path should be move the same amount in each direction. 
+
+2. Combined Temperature Tracking: The total temperature change captured by a species, considering both spatial and temporal adjustments, should be calculated as the percentage change in one direction multiplied by √2 (rather than simply adding the two percentages).
+
+## Further rescale the axis by difficulty of change
+
+1. The [bird paper](https://www.nature.com/articles/s41559-024-02536-z) found that birds track temperature changes much more through phenological shifts than through distributional shifts, suggesting it is often easier for species to adjust their timing than their location. 
+
+2. This tracking difficulty difference can be quantified by the ratio of phenological to distributional change; for example, if phenology captures 20% and distribution only 5% of the temperature shift, distributional change is four times more difficult.
+
+# Overall Temperature Niche Capture
+
+In this more complicated scenario considering the tracking difficulties, to assess how much of the temperature shift species track through combined phenological and distributional adjustments, we can check their phenological niche change under 2°C warming:
+
+Hypothetical Scenarios (Assuming a 2°C Warming):
+
+1. No Distribution or Phenology Change (no tracking):
+Niche shifts +2°C (mirroring environmental change).
+
+2. Complete Tracking (via Distribution and Phenology):
+Niche remains unchanged (ideal compensation via distribution/phenology)
+
+3. Partial Tracking:
+The observed niche shift would fall between the first two scenarios. The difference between the observed and original niche indicates the lack (insufficient track).
+
+```{r include=FALSE}
+# no tracking
+
+# Define curve properties
+curve_info <- data.frame(
+  name = c("Observed niche", "Original niche", "Warmed but no tracking niche"),
+  mean = c(2, 0, 2),
+  color = c("#7CAE00", "black", "#F8766D"),
+  linewidth = c(5, 1, 1)
+)
+
+#  #00BFC4
+# Generate data for each curve
+x <- seq(-4, 6, length.out = 400)
+curves <- curve_info %>%
+  rowwise() %>%
+  do(data.frame(
+    x = x,
+    y = dnorm(x, mean = .$mean, sd = 1),
+    name = .$name,
+    color = .$color,
+    linewidth = .$linewidth
+  )) %>%
+  ungroup()
+
+# Set the factor levels so thin lines are plotted last (on top)
+curves$name <- factor(curves$name, levels = c("Observed niche", "Original niche", "Warmed but no tracking niche"))
+
+# Plot
+no_response <- ggplot(curves, aes(x = x, y = y, color = name, linewidth = name, group = name)) +
+  geom_line(show.legend = TRUE) +
+  scale_color_manual(
+    values = setNames(curve_info$color, curve_info$name)
+  ) +
+  scale_linewidth_manual(
+    values = setNames(curve_info$linewidth, curve_info$name)
+  ) +
+  labs(
+    title = "No tracking",
+    x = "Temperature",
+    y = "Density",
+    color = "Curve",
+    linewidth = "Curve"
+  ) +
+  theme(legend.position = "top")
+
+# print(no_response)
+```
+
+
+```{r include=FALSE}
+# complete tracking
+
+# Define curve properties
+curve_info <- data.frame(
+  name = c("Observed niche", "Original niche", "Warmed but no tracking niche"),
+  mean = c(0, 0, 2),
+  color = c("#7CAE00", "black", "#F8766D"),
+  linewidth = c(5, 1, 1)
+)
+
+#  #00BFC4
+# Generate data for each curve
+x <- seq(-4, 6, length.out = 400)
+curves <- curve_info %>%
+  rowwise() %>%
+  do(data.frame(
+    x = x,
+    y = dnorm(x, mean = .$mean, sd = 1),
+    name = .$name,
+    color = .$color,
+    linewidth = .$linewidth
+  )) %>%
+  ungroup()
+
+# Set the factor levels so thin lines are plotted last (on top)
+curves$name <- factor(curves$name, levels = c("Observed niche", "Original niche", "Warmed but no tracking niche"))
+
+# Plot
+perfect_catch <- ggplot(curves, aes(x = x, y = y, color = name, linewidth = name, group = name)) +
+  geom_line(show.legend = TRUE) +
+  scale_color_manual(
+    values = setNames(curve_info$color, curve_info$name)
+  ) +
+  scale_linewidth_manual(
+    values = setNames(curve_info$linewidth, curve_info$name)
+  ) +
+  labs(
+    title = "Complete tracking",
+    x = "Temperature",
+    y = "Density",
+    color = "Curve",
+    linewidth = "Curve"
+  ) +
+  theme(legend.position = "top")
+
+# print(perfect_catch)
+```
+
+
+```{r include=FALSE}
+# partial tracking
+
+# Define curve properties
+curve_info <- data.frame(
+  name = c("Observed niche", "Original niche", "Warmed but no tracking niche"),
+  mean = c(1, 0, 2),
+  color = c("#7CAE00", "black", "#F8766D"),
+  linewidth = c(5, 1, 1)
+)
+
+#  #00BFC4
+# Generate data for each curve
+x <- seq(-4, 6, length.out = 400)
+curves <- curve_info %>%
+  rowwise() %>%
+  do(data.frame(
+    x = x,
+    y = dnorm(x, mean = .$mean, sd = 1),
+    name = .$name,
+    color = .$color,
+    linewidth = .$linewidth
+  )) %>%
+  ungroup()
+
+# Set the factor levels so thin lines are plotted last (on top)
+curves$name <- factor(curves$name, levels = c("Observed niche", "Original niche", "Warmed but no tracking niche"))
+
+# Plot
+between <- ggplot(curves, aes(x = x, y = y, color = name, linewidth = name, group = name)) +
+  geom_line(show.legend = TRUE) +
+  scale_color_manual(
+    values = setNames(curve_info$color, curve_info$name)
+  ) +
+  scale_linewidth_manual(
+    values = setNames(curve_info$linewidth, curve_info$name)
+  ) +
+  labs(
+    title = "Partial tracking",
+    x = "Temperature",
+    y = "Density",
+    color = "Curve",
+    linewidth = "Curve"
+  ) +
+  theme(legend.position = "top")
+
+# print(between)
+```
+
+```{r fig.width=10, fig.height=4}
+
+
+# Adjust the margins and layout
+niche_change <-  no_response + perfect_catch + between +
+  # plot_layout(design = layout) +
+  plot_layout(guides = "collect") +
+  plot_annotation(tag_levels = "a") &
+  theme(legend.position = "bottom")
+  
+
+# Print the combined plot
+print(niche_change)
+```
