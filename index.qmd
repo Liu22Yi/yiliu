@@ -1,6 +1,6 @@
 ---
 title: "Yi Liu"
-subtitle: "global change | data science"
+subtitle: "Global change | Data science"
 image: people/Liu/Liu.jpg
 about:
   template: trestles

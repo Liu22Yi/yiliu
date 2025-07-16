@@ -1,0 +1,39 @@
+---
+title: "Wind speed change and sandstorm"
+author: 
+  - __Yi Liu__
+  - Zeng's group
+date: "2024-01-30"
+description: " "
+categories:
+  - Changing wind
+  - Past projects
+about:
+  template: solana
+format:
+  html:
+    code-fold: true
+    toc: true
+---
+
+### Wind speed reversal increase sand-dust storm risk
+
+Despite efforts in vegetation restoration, the frequency of sand-dust storms is increasing due to stronger wind speeds.
+
+![Stronger winds increase the sand-dust storm risk in northern China](1.png){height=500px}
+
+Read more in this study:  
+**Liu, Y.**, Xu, R., Ziegler, A. D. & Zeng, Z. Stronger winds increase the sand-dust storm risk in northern China. *Environmental Science: Atmospheres*. [https://pubs.rsc.org/en/content/articlelanding/2022/ea/d2ea00058j](https://pubs.rsc.org/en/content/articlelanding/2022/ea/d2ea00058j) (2022).
+
+---
+
+### Wind speed enhancement as the primary cause of sand-dust days increase in China
+
+Compared with vegetation and precipitation, wind speed is the main driver of sand-dust days increase in recent years in China.
+
+![Influence of wind speed, precipitation, and NDVI on the frequency of dust days in northern China.](2.png){height=300px}
+
+Read more in this study:  
+Jiang, X., Feng, Q., Zhou, L., **Liu, Y.** & Zeng, Z. Wind speed enhancement as the primary cause of sand-dust days increase in China over recent years. *Kexue Tongbao/Chinese Science Bulletin* **69**, 356–361. [https://doi.org/10.1360/TB-2023-0311](https://doi.org/10.1360/TB-2023-0311) (2024).
+
+

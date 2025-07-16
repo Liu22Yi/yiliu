@@ -1,0 +1,51 @@
+---
+title: "Wind speed change and wind power"
+author: 
+  - __Yi Liu__
+  - Zeng's group
+date: "2022-11-04"
+description: " "
+categories:
+  - Changing wind
+  - Past projects
+about:
+  template: solana
+format:
+  html:
+    code-fold: true
+    toc: true
+---
+
+
+### Wind speed reversal increase wind power production
+
+Wind speed, after a decade of decline, has begun to recover—bringing potential for increased wind power generation. 
+
+
+![Spatiotemporal pattern of wind speed trends and wind turbine distribution.](1.jpg){height=500px}
+
+Read more in this study:  
+**Liu, Y.**, Zeng, Z., Xu, R., Ziegler, A. D., Jerez, S., Chen, D., Azorin-Molina, C., Zhou, L., Yang, X., Xu, H., Li, L., Dong, L., Zhou, F., Cao, R., Liu, J., Ye, B., Kuang, X. & Yang, X. Increases in China’s wind energy production from the recovery of wind speed since 2012. *Environmental Research Letters* **17**, 114035. [https://doi.org/10.1088/1748-9326/ac9cf4](https://doi.org/10.1088/1748-9326/ac9cf4) (2022).
+
+---
+
+### Wind power ABC
+A quick introduction to wind power from the natural resources, engineering and economics perspectives. 
+
+![Different scales of wind systems](2.png){height=500px}
+
+Read more in this book chapter:  
+**Liu, Y.** & Zeng, Z. in *The Palgrave Handbook of Global Sustainability* 1–17 (Springer International Publishing, 2022).[https://doi.org/10.1007/978-3-030-38948-2_17-1](https://doi.org/10.1007/978-3-030-38948-2_17-1).
+
+---
+
+### Evaluation of reanalysis wind speed data
+
+We assessed winds trends in five reanalysis products (ERA5, ERA-Interim, MERRA-2, JRA-55, and CFSv2) by comparing gridcell time series of 10-m wind speed with observational data from 1439 in situ meteorological stations.
+
+![Comparison on the overall trends during 1989–2018 in the observations against that in the five products.](3.png){height=300px}
+
+Read more in this study:  
+Fan, W., **Liu, Y.**, Chappell, A., Dong, L., Xu, R., Ekström, M., Fu, T.-M. & Zeng, Z. Evaluation of Global Reanalysis Land Surface Wind Speed Trends to Support Wind Energy Development Using In Situ Observations. *Journal of Applied Meteorology and Climatology*. [https://doi.org/10.1175/JAMC-D-20-0037.1](https://doi.org/10.1175/JAMC-D-20-0037.1) (2021).
+
+

@@ -1,0 +1,43 @@
+---
+title: "Flowering phenology"
+author: 
+  - __Yi Liu__
+  - Zhu's group
+date: "2025-07-13"
+description: " "
+categories:
+  - Leading project
+  - Changing phenology
+  - Working
+about:
+  template: solana
+format:
+  html:
+    code-fold: true
+    toc: true
+---
+
+### Flowering sensitivity
+
+We investigated the relationship between temperature changes and flowering time in wind-pollinated trees using herbarium records, applying a phylogenetic mixed-effects model.
+
+![Herbarium image and the infered sensitivity with phylogenetic information.](1.png){height=400px}
+
+Read more in this study:  
+**Liu, Y.**, Song, Y. and Zhu, K. Plasticity instead of adaptation dominated wind-pollinated trees’ flowering time sensitivity to temperature. in preparation.
+
+---
+
+### Leaf-flower sequence
+
+We analyzed paired, individual-level data on flowering and leaf-out times to establish their relationship using circular statistics and leveraged satellite-derived green-up dates to estimate flowering time.
+
+![Linear-circular regression of paired, individual-level leaf and flower data.](2.png){height=600px} 
+
+---
+
+### Flower synchrony
+Flowering synchrony, the extent to which individuals within a population flower at the same time, is a key driver of pollination efficiency and reproductive success in wind-pollinated trees. Here we are trying to use site-level flowering time data from National Phenology Network (NPN).
+
+![Patterns of flowering time synchrony in NPN.](3.png){height=800px}
+

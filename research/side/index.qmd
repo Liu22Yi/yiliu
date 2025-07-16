@@ -1,0 +1,28 @@
+---
+title: "Side projects"
+date: "2022-11-18"
+description: " "
+categories:
+  - Fish
+  - Past projects
+about:
+  template: solana
+format:
+  html:
+    code-fold: true
+    toc: true
+---
+
+### Thermal cue for shark emigration
+Work done in Bayesian Ecological & Environmental Statistics (B.E.E.S.) lab at University of Toronto.
+
+We analyzed acoustic telemetry tracking and high-resolution water temperature data to identify and quantify a thermal threshold for mass emigration of juvenile white sharks
+
+![Change point analysis of daily averaged sea floor temperature data and proportion of sharks present at Padaro from 15 May to 10 December](1.png){height=300px}
+
+Read more in this study:  
+Spurgeon, E., Anderson, J. M., **Liu, Y.**, Barajas, V. L. & Lowe, C. G. Quantifying thermal
+cues that initiate mass emigrations in juvenile white sharks. *Scientific Reports* **12**. [https://doi.org/10.1038/s41598-022-24377-1](https://doi.org/10.1038/s41598-022-24377-1) (2022).
+
+
+

@@ -1,0 +1,56 @@
+---
+title: "Wind speed change"
+author: 
+  - __Yi Liu__
+  - Zeng's group
+date: "2024-02-16"
+description: " "
+categories:
+  - Changing wind
+  - Past projects
+about:
+  template: solana
+format:
+  html:
+    code-fold: true
+    toc: true
+---
+
+
+
+### Data discontinuities in wind measurement
+We reported the discontinuities in wind data in China reasoned from anemometer changes, site relocations and processing methods.
+
+![Example of station relocation caused by rapid urbanization growth.](1.png){height=500px}
+
+Read more in this study:  
+**Liu, Y.**, Zhou, L., Qin, Y., Azorin-Molina, C., Shen, C., Xu, R. & Zeng, Z. Impacts of anemome-
+ter changes, site relocations and processing methods on wind speed trends in China. *Atmo-
+spheric Measurement Techniques* **17**, 1123–1131. [https://doi.org/10.5194/amt-17-1123-2024](https://doi.org/10.5194/amt-17-1123-2024) (2024).
+
+---
+
+### Spatiotemporal changes of frequency of terrestrial wind speed
+We quantified the influence of frequency changes in average surface wind speed changes and revealed that the weakening of strong wind was the main cause of global ‘stilling’ and the slight winds are major parts of the surface wind speed reversal.
+
+![Changes of frequencies in nine ranges of surface wind speed.](2.png){height=500px}
+
+Read more in this study:  
+Zhao, Y., Liang, S., **Liu, Y.**, McVicar, T. R., Azorin-Molina, C., Zhou, L., Dunn, R. J. H.,
+Jerez, S., Qin, Y., Yang, X., Xu, J. & Zeng, Z. Global assessment of spatiotemporal changes
+of frequency of terrestrial wind speed. *Environmental Research Letters* **18**, 044048. [https://doi.org/10.1088/1748-9326/acc9d5](https://doi.org/10.1088/1748-9326/acc9d5) (2023).
+
+---
+
+### Decline of seasonal wind speed range over Land
+Global seasonal wind speed range (SWSR), which is the difference between maximum and minimum monthly mean wind speeds (MWS), has declined over the past four decades (1980–2018), although global annual wind speeds have fallen and then increased over this period.
+
+![Terrestrial wind speed changes for 1980–2018.](3.png){height=300px}
+
+Read more in this study:  
+Zhou, L., Zeng, Z., Azorin-Molina, C., **Liu, Y.**, Wu, J., Wang, D., Li, D., Ziegler, A. D. &
+Dong, L. A Continuous Decline of Global Seasonal Wind Speed Range over Land since
+1980. *Journal of Climate* **34**, 9443–9461. [https://doi.org/10.1175/JCLI-D-21-0112.1](https://doi.org/10.1175/JCLI-D-21-0112.1)
+(2021).
+
+

@@ -1,0 +1,47 @@
+---
+title: "Pollen prediction"
+author: 
+  - __Yi Liu__
+  - Zhu's group
+date: "2025-07-12"
+description: " "
+categories:
+  - Leading project
+  - Pollen
+  - Machine learning
+  - Working
+about:
+  template: solana
+format:
+  html:
+    code-fold: true
+    toc: true
+---
+
+[Project](https://seas.umich.edu/globalchangebiology/research/climate-airborne-pollen) founded by IGCB.
+
+### Use LSTM and transformer to predict pollen concentration in short term
+
+We are trying to use machine learning models for short-term pollen prediction.
+
+![Model framework.](1.png){height=800px}
+
+---
+
+### Understand pollen interannual prodcution variation for long term prediction
+
+Pollen production has significant inter-annual variation. We are trying to identify the pattern and the environmental cues for better long term prediction.
+
+![Interannual patterns of annual pollen production at a Kansas monitoring station.](2.png){height=200px}
+
+---
+
+### Using satellite observations to advance airborne pollen mapping
+We developed a machine learning framework based on satellite and ground lidar observation to map pollen concentrations at the continental scale.
+
+![Vertical profile of pollen plume observed with MPLNET and CALIPSO on May 19, 2021, when the total pollen concentration in Silver Spring, MD was 1157 grains m-3.](3.png){height=800px}
+
+Read more in this study:  
+Zhang, Y., **Liu, Y.**, Zhu, K., Yu, H., Tan, Q. & Steiner, A. Advancing airborne pollen map-
+ping with integrated ground and satellite observations. *Remote Sensing of Environment*.under review.
+

@@ -1,0 +1,46 @@
+---
+title: "Beyond research"
+about:
+  template: solana
+format:
+  html:
+    code-fold: true
+    toc: true
+---
+
+Knowing the people who did the research is as important as knowing the research itself. 
+
+### Natural observation
+
+I use [Pl@ntNet](https://plantnet.org/en/) for identifying plants. I like their feature of classsifying plant component because plants may look very different during flowering and fruit stages. I'm a top 1% observer (account: [yia](https://identify.plantnet.org/users/106222146/observations)).
+
+
+I use [iNaturalist](https://www.inaturalist.org/) for identifying other organisms, such as fungi, insects, and other animals. (account: [yi80](https://www.inaturalist.org/people/6413379)).
+
+I use [Merlin Bird ID](https://merlin.allaboutbirds.org/) sometime for identifying bird calls. 
+
+I also like an app called [Shroomify](https://www.foragers-friend.com/) for identifying mushrooms.
+
+### Science communication
+
+I was
+
+I follow a broad range of science communication accounts and
+
+
+### Sports
+I enjoy almost every type of sport. One of my proudest achievements is teaching myself how to swim at the age of 15. This experience not only helped me learn to swim, but also taught me the value of self-directed learning—especially using online resources when time or money is limited. Since then, I’ve gained many new skills through self-learning.
+
+My greatest dedication in sports is to martial arts. I practiced taekwondo for ten years and earned a second-dan black belt. Currently, I am learning judo. Martial arts have given me both physical strength and resilience. 
+
+
+
+### Music
+I am learning singing, even though I wasn't a little late to start, now it become my daily life and a great way to relax. 
+
+
+
+
+
+
+

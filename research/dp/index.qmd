@@ -1,9 +1,19 @@
 ---
-title: Ecosystem change
+title: "Distribution and phenology change"
+subtitle: "Demo of the latitude-month diagram idea"
+author: 
+  - __Yi Liu__
+  - Macrophenology ESIIL Working Group
+date: "2025-03-31"
+description: "Manuscript in preparation"
+categories:
+  - Changing phenology
+  - Working
 about:
   template: solana
 format:
   html:
+    code-fold: true
     toc: true
 ---
 
