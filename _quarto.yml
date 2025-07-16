@@ -41,4 +41,4 @@ publish:
   gh-pages:
     branch: gh-pages
     message: "Auto-generated deployment from Quarto"
-    repository: yiluansong/yiluansong.github.io
+    repository: Liu22Yi/Liu22Yi.github.io
